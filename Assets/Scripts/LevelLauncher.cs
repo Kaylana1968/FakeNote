@@ -6,6 +6,8 @@ public class LevelLauncher : MonoBehaviour
   [SerializeField] GameObject tapNote;
   [SerializeField] GameObject gamePanel;
 
+  readonly float planeSize = 10f;
+
   public Level level;
   float elapsedTime;
   int currentNoteIndex;
@@ -26,7 +28,7 @@ public class LevelLauncher : MonoBehaviour
     {
       Note note = level.notes[currentNoteIndex];
 
-      Instantiate(tapNote, new Vector3((5f + 10f * note.column) / 6f, 0.0f, 0.0f), Quaternion.identity);
+      Instantiate(tapNote, new Vector3((planeSize / 2f + planeSize * note.column) / 6f, 0.0f, 0.0f), Quaternion.identity);
 
       currentNoteIndex++;
 
