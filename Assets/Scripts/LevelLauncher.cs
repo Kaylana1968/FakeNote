@@ -29,17 +29,20 @@ public class LevelLauncher : MonoBehaviour
   {
     elapsedTime += Time.deltaTime;
 
-    if (currentNoteIndex >= level.notes.Count) return;
+    if (currentNoteIndex >= level.noteRows.Count) return;
 
-    while (level.notes[currentNoteIndex].time < elapsedTime)
+    while (level.noteRows[currentNoteIndex].time < elapsedTime)
     {
-      Note note = level.notes[currentNoteIndex];
-      GameObject gameObject = Instantiate(tapNote, spawnPoints[note.column], Quaternion.Euler(new Vector3(90f, 0f, 0f)));
-      gameObject.transform.parent = transform;
+      NoteRow noteRow = level.noteRows[currentNoteIndex];
+      foreach (Note note in noteRow.notes)
+      {
+        GameObject gameObject = Instantiate(tapNote, spawnPoints[note.column], Quaternion.Euler(new Vector3(90f, 0f, 0f)));
+        gameObject.transform.parent = transform;        
+      }
 
       currentNoteIndex++;
 
-      if (currentNoteIndex >= level.notes.Count) return;
+      if (currentNoteIndex >= level.noteRows.Count) return;
     }
   }
 }
