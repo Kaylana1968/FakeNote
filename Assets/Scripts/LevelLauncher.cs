@@ -4,11 +4,16 @@ using UnityEngine;
 public class LevelLauncher : MonoBehaviour
 {
   [SerializeField] GameObject tapNote;
-  [SerializeField] GameObject gamePanel;
 
-  readonly float planeSize = 10f;
-  readonly float noteSize = 10f / 6f;
-  readonly int columnCount = 6;
+  readonly List<Vector3> spawnPoints = new()
+  {
+    new(0.6f, 0f, 90f),
+    new(1.7f, 0f, 90f),
+    new(2.8f, 0f, 90f),
+    new(3.9f, 0f, 90f),
+    new(5.0f, 0f, 90f),
+    new(6.1f, 0f, 90f),
+  };
 
   public Level level;
   float elapsedTime;
@@ -29,8 +34,8 @@ public class LevelLauncher : MonoBehaviour
     while (level.notes[currentNoteIndex].time < elapsedTime)
     {
       Note note = level.notes[currentNoteIndex];
-
-      Instantiate(tapNote, new Vector3(noteSize / 2f + planeSize * note.column / columnCount, 0.0f, 0.0f), Quaternion.identity);
+      GameObject gameObject = Instantiate(tapNote, spawnPoints[note.column], Quaternion.Euler(new Vector3(90f, 0f, 0f)));
+      gameObject.transform.parent = transform;
 
       currentNoteIndex++;
 

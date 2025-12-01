@@ -15,7 +15,25 @@ MonoBehaviour:
   notes:
   - column: 0
     time: 1
+    followingNotes: []
   - column: 1
-    time: 3
+    time: 1
+    followingNotes: []
+  - column: 2
+    time: 1
+    followingNotes: []
+  - column: 3
+    time: 1
+    followingNotes: []
   - column: 4
-    time: 5
+    time: 1
+    followingNotes: []
+  - column: 5
+    time: 1
+    followingNotes: []
+  - column: 5
+    time: 3
+    followingNotes: []
+  - column: 2
+    time: 3
+    followingNotes: []

@@ -1,7 +1,8 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
+[Serializable]
 public class Note
 {
   [Range(0, 5)]
@@ -10,7 +11,7 @@ public class Note
   public List<ChildNote> followingNotes;
 }
 
-[System.Serializable]
+[Serializable]
 public class ChildNote
 {
   [Range(0, 5)]
