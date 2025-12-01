@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class NotesScroll : MonoBehaviour
 {
-    readonly float speed = 15f;
+    readonly float speed = 2f;
 
     void FixedUpdate()
     {
