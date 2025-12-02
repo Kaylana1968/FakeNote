@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using UnityEditor.Animations;
 using UnityEngine;
 
 public class LevelLauncher : MonoBehaviour
@@ -7,11 +6,13 @@ public class LevelLauncher : MonoBehaviour
   [SerializeField] GameObject tapNote;
 
   public Level level;
-  float elapsedTime;
-  int currentNoteIndex;
   public List<Transform> columns = new();
   public List<Transform> notes = new();
+
   readonly float speed = 5f;
+
+  float elapsedTime;
+  int currentNoteIndex;
 
   void Start()
   {
@@ -19,10 +20,10 @@ public class LevelLauncher : MonoBehaviour
     currentNoteIndex = 0;
 
     foreach (Transform child in transform)
-        {
-            columns.Add(child);
-        }
-  } 
+    {
+      columns.Add(child);
+    }
+  }
 
   void FixedUpdate()
   {
@@ -38,7 +39,7 @@ public class LevelLauncher : MonoBehaviour
           GameObject newNote = Instantiate(tapNote, Vector3.zero, Quaternion.Euler(new Vector3(90f, 0f, 0f)));
           newNote.transform.parent = columns[note.column];
           newNote.transform.localPosition = new Vector3(0f, 0f, 20f);
-          notes.Add(newNote.transform);       
+          notes.Add(newNote.transform);
         }
 
         currentNoteIndex++;
@@ -52,7 +53,7 @@ public class LevelLauncher : MonoBehaviour
 
     foreach (Transform note in notes)
     {
-        note.position += movement;
+      note.position += movement;
     }
   }
 }
