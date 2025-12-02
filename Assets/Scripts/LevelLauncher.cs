@@ -12,6 +12,15 @@ public class LevelLauncher : MonoBehaviour
 
 	readonly float startPauseTime = 3f;
   readonly float speed = 5f;
+  readonly List<Color> colors = new()
+  {
+    new Color(0.7f, 0f, 0f),
+    new Color(0f, 0.7f, 0f),
+    new Color(0f, 0f, 0.7f),
+    new Color(0.7f, 0.7f, 0f),
+    new Color(0f, 0.7f, 0.7f),
+    new Color(0.7f, 0f, 0.7f)
+  };
   readonly Quaternion angle = Quaternion.Euler(new Vector3(90f, 0f, 0f));
 
   void Start()
@@ -32,6 +41,9 @@ public class LevelLauncher : MonoBehaviour
 				newNote.transform.localPosition = new Vector3(0f, 0f, newNote.transform.localPosition.z);
 				notes.Add(newNote.transform);
 
+        Color color = colors[note.column];
+        newNote.GetComponent<SpriteRenderer>().color = color;
+
         if (note.type == NoteType.hold)
         {
           float endPosZ = (startPauseTime + note.endTime) * speed;
@@ -44,8 +56,11 @@ public class LevelLauncher : MonoBehaviour
           trail.transform.parent = newNote.transform;
           trail.transform.position = Vector3.Lerp(newNote.transform.position, endNote.transform.position, 0.5f);
           trail.transform.position = new Vector3(trail.transform.position.x, -0.001f, trail.transform.position.z);
-          trail.transform.localScale = new Vector3(0.5f, Mathf.Abs(newNote.transform.position.z - endNote.transform.position.z) - 0.5f, 1f);
-        }
+          trail.transform.localScale = new Vector3(0.75f, Mathf.Abs(newNote.transform.position.z - endNote.transform.position.z) - 0.5f, 1f);
+
+          endNote.GetComponent<SpriteRenderer>().color = color;
+          trail.GetComponent<SpriteRenderer>().color = new Color(color.a, color.g, color.b, 0.5f);
+        }        
 			}
     }
   }

@@ -24,8 +24,16 @@ MonoBehaviour:
     - column: 2
       type: 0
       endTime: 0
+  - time: 0
+    notes:
+    - column: 5
+      type: 2
+      endTime: 5
   - time: 3
     notes:
-    - column: 2
+    - column: 3
+      type: 0
+      endTime: 0
+    - column: 4
       type: 0
       endTime: 0
