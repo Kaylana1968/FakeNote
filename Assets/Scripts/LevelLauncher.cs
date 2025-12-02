@@ -14,12 +14,12 @@ public class LevelLauncher : MonoBehaviour
   readonly float speed = 20f;
   readonly List<Color> colors = new()
   {
-    new Color(0.7f, 0f, 0f),
-    new Color(0f, 0.7f, 0f),
-    new Color(0f, 0f, 0.7f),
-    new Color(0.7f, 0.7f, 0f),
-    new Color(0f, 0.7f, 0.7f),
-    new Color(0.7f, 0f, 0.7f)
+    new Color(1f, 0.5f, 0f),
+    new Color(1f, 1f, 0f),
+    new Color(0f, 1f, 0f),
+    new Color(0f, 1f, 1f),
+    new Color(0f, 0f, 1f),
+    new Color(1f, 0f, 1f)
   };
   readonly Quaternion angle = Quaternion.Euler(new Vector3(90f, 0f, 0f));
 

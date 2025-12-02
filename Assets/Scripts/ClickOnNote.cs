@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class ClickOnNote : MonoBehaviour
 {
-	[SerializeField]
-	LevelLauncher levelLauncher;
+	[SerializeField] LevelLauncher levelLauncher;
+    [SerializeField] ParticleSystem[] particleSystems;
+
 	private InputSystem_Actions inputs;
-    public ParticleSystem[] particleSystems;
 
 	private void Awake()
 	{
