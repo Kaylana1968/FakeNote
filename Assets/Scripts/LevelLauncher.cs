@@ -5,7 +5,8 @@ public class LevelLauncher : MonoBehaviour
 {
 	[SerializeField] GameObject tapNote;
 	[SerializeField] GameObject noteTrail;
-
+	
+	AudioSource audioSource;
 	public Level level;
 	public List<Transform> columns = new();
 	public List<Transform> notes = new();
@@ -25,6 +26,14 @@ public class LevelLauncher : MonoBehaviour
 
 	void Start()
 	{
+		audioSource = GetComponent<AudioSource>();
+
+		if (level != null && level.audio != null)
+        {
+            audioSource.clip = level.audio;
+			audioSource.PlayDelayed(startPauseTime);
+        }
+
 		foreach (Transform child in transform)
 		{
 			columns.Add(child);

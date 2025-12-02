@@ -12,34 +12,135 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0830c87f3e695b2458ad0419b27839fe, type: 3}
   m_Name: Level
   m_EditorClassIdentifier: Assembly-CSharp::Level
+  audio: {fileID: 8300000, guid: 524c89b6af8a861409710382dbaa2ee6, type: 3}
   noteRows:
   - time: 0
     notes:
     - column: 0
+      type: 0
       isFake: 0
-      type: 1
       endTime: 3
     - column: 1
-      isFake: 0
       type: 0
+      isFake: 0
       endTime: 0
     - column: 2
-      isFake: 0
       type: 0
+      isFake: 0
       endTime: 0
-  - time: 0
-    notes:
-    - column: 5
-      isFake: 0
-      type: 1
-      endTime: 5
-  - time: 3
-    notes:
     - column: 3
-      isFake: 0
       type: 0
+      isFake: 0
       endTime: 0
     - column: 4
-      isFake: 0
       type: 0
+      isFake: 0
+      endTime: 0
+    - column: 5
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 1
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 3
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 5
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 2
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 3
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 5
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 3
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 3
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 5
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 4
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 3
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 5
+      type: 0
+      isFake: 0
       endTime: 0
