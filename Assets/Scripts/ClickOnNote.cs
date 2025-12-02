@@ -1,9 +1,11 @@
+using TMPro;
 using UnityEngine;
 
 public class ClickOnNote : MonoBehaviour
 {
 	[SerializeField] LevelLauncher levelLauncher;
     [SerializeField] ParticleSystem[] particleSystems;
+    [SerializeField] TextMeshPro TextMeshPro;
 
 	private InputSystem_Actions inputs;
 
@@ -52,17 +54,21 @@ public class ClickOnNote : MonoBehaviour
         float distance = Mathf.Abs(firstNote.position.z - transform.position.z);
 
         particleSystems[columnIndex].Play();
+        TextMeshPro.color = particleSystems[columnIndex].startColor;
 
         if (distance < 0.3)
-        {
+        {   
+            TextMeshPro.text = "Perfect";
             Debug.Log("Perfect");
         }
         else if (distance < 0.6)
         {
+            TextMeshPro.text = "Good";
             Debug.Log("Good");
         }
         else
         {
+            TextMeshPro.text = "Miss";
             Debug.Log("Miss");
         }
 
