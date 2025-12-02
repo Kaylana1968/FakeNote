@@ -160,8 +160,9 @@ GameObject:
   m_Component:
   - component: {fileID: 282326811}
   - component: {fileID: 282326812}
+  - component: {fileID: 282326813}
   m_Layer: 0
-  m_Name: Line (1)
+  m_Name: ValidationBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -176,7 +177,7 @@ Transform:
   m_GameObject: {fileID: 282326810}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 3.53}
+  m_LocalPosition: {x: 0, y: 0, z: 3.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -231,11 +232,11 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0.7}
-  - {x: 6.7, y: 0, z: 0.7}
-  - {x: 6.7, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: -0.35}
+  - {x: 0, y: 0, z: 0.35}
+  - {x: 6.7, y: 0, z: 0.35}
+  - {x: 6.7, y: 0, z: -0.35}
+  - {x: 0, y: 0, z: -0.35}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.03
@@ -295,6 +296,19 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &282326813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282326810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca653f43f9ab9804cb4671e2c7d3cfaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClickOnNote
+  levelLauncher: {fileID: 1735601570}
 --- !u!1 &296773664
 GameObject:
   m_ObjectHideFlags: 0
@@ -757,9 +771,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1735601568}
-  - component: {fileID: 1735601569}
   - component: {fileID: 1735601570}
-  - component: {fileID: 1735601571}
   m_Layer: 0
   m_Name: Notes
   m_TagString: Untagged
@@ -788,18 +800,6 @@ Transform:
   - {fileID: 1214209971}
   m_Father: {fileID: 747115071}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1735601569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1735601567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cce15857fb629047b726d5c1b537ba2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NotesScroll
 --- !u!114 &1735601570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -815,18 +815,7 @@ MonoBehaviour:
   tapNote: {fileID: 5531050612506118611, guid: 931932c119232a945b3b7c65ae40c6c2, type: 3}
   level: {fileID: 11400000, guid: 8c08651dd4c32684e9d045bff80f098e, type: 2}
   columns: []
---- !u!114 &1735601571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1735601567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca653f43f9ab9804cb4671e2c7d3cfaf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ClickOnNote
+  notes: []
 --- !u!1 &1865844572
 GameObject:
   m_ObjectHideFlags: 0

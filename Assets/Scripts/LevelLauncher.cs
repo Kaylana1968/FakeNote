@@ -6,16 +6,6 @@ public class LevelLauncher : MonoBehaviour
 {
   [SerializeField] GameObject tapNote;
 
-  // readonly List<Vector3> spawnPoints = new()
-  // {
-  //   new(0.6f, 0f, 90f),
-  //   new(1.7f, 0f, 90f),
-  //   new(2.8f, 0f, 90f),
-  //   new(3.9f, 0f, 90f),
-  //   new(5.0f, 0f, 90f),
-  //   new(6.1f, 0f, 90f),
-  // };
-
   public Level level;
   float elapsedTime;
   int currentNoteIndex;
@@ -47,7 +37,7 @@ public class LevelLauncher : MonoBehaviour
         {
           GameObject newNote = Instantiate(tapNote, Vector3.zero, Quaternion.Euler(new Vector3(90f, 0f, 0f)));
           newNote.transform.parent = columns[note.column];
-          newNote.transform.localPosition = new Vector3(0,0,90);
+          newNote.transform.localPosition = new Vector3(0f, 0f, 20f);
           notes.Add(newNote.transform);       
         }
 
