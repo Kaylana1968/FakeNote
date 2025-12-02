@@ -1,2 +1,14 @@
 fileFormatVersion: 2
 guid: 24c0c599fa44727449b907287097dcc1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - tapNote: {fileID: 5531050612506118611, guid: 931932c119232a945b3b7c65ae40c6c2, type: 3}
+  - noteTrail: {fileID: 7110167397845504375, guid: 8af95bc19656f2a4e85d5dd45b141679, type: 3}
+  - level: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

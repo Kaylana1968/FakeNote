@@ -13,15 +13,19 @@ MonoBehaviour:
   m_Name: Level
   m_EditorClassIdentifier: Assembly-CSharp::Level
   noteRows:
-  - time: 3
+  - time: 0
     notes:
     - column: 0
-      noteType: 0
+      type: 2
+      endTime: 3
     - column: 1
-      noteType: 0
+      type: 0
+      endTime: 0
     - column: 2
-      noteType: 0
-  - time: 5
+      type: 0
+      endTime: 0
+  - time: 3
     notes:
     - column: 2
-      noteType: 0
+      type: 0
+      endTime: 0

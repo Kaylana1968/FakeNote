@@ -4,6 +4,7 @@ using UnityEngine;
 public class LevelLauncher : MonoBehaviour
 {
   [SerializeField] GameObject tapNote;
+  [SerializeField] GameObject noteTrail;
 
   public Level level;
   public List<Transform> columns = new();
@@ -11,6 +12,7 @@ public class LevelLauncher : MonoBehaviour
 
 	readonly float startPauseTime = 3f;
   readonly float speed = 5f;
+  readonly Quaternion angle = Quaternion.Euler(new Vector3(90f, 0f, 0f));
 
   void Start()
   {
@@ -24,12 +26,27 @@ public class LevelLauncher : MonoBehaviour
 			float posZ = (startPauseTime + noteRow.time) * speed;
 
       foreach (Note note in noteRow.notes)
+			{
+				GameObject newNote = Instantiate(tapNote, new Vector3(0f, 0f, posZ), angle);
+				newNote.transform.parent = columns[note.column];
+				newNote.transform.localPosition = new Vector3(0f, 0f, newNote.transform.localPosition.z);
+				notes.Add(newNote.transform);
+
+        if (note.type == NoteType.hold)
         {
-          GameObject newNote = Instantiate(tapNote, new Vector3(0f, 0f, posZ), Quaternion.Euler(new Vector3(90f, 0f, 0f)));
-          newNote.transform.parent = columns[note.column];
-          newNote.transform.localPosition = new Vector3(0f, 0f, newNote.transform.localPosition.z);
-          notes.Add(newNote.transform);
+          float endPosZ = (startPauseTime + note.endTime) * speed;
+
+				  GameObject endNote = Instantiate(tapNote, new Vector3(0f, 0f, endPosZ), angle);
+				  endNote.transform.parent = newNote.transform;
+          endNote.transform.localPosition = new Vector3(0f, endNote.transform.localPosition.y, 0f);
+
+          GameObject trail = Instantiate(noteTrail, Vector3.zero, angle);
+          trail.transform.parent = newNote.transform;
+          trail.transform.position = Vector3.Lerp(newNote.transform.position, endNote.transform.position, 0.5f);
+          trail.transform.position = new Vector3(trail.transform.position.x, -0.001f, trail.transform.position.z);
+          trail.transform.localScale = new Vector3(0.5f, Mathf.Abs(newNote.transform.position.z - endNote.transform.position.z) - 0.5f, 1f);
         }
+			}
     }
   }
 

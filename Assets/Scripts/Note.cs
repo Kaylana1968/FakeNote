@@ -6,8 +6,7 @@ public enum NoteType
 {
   tap,
   fake,
-  hold,
-  release
+  hold
 }
 
 [Serializable]
@@ -22,5 +21,6 @@ public class Note
 {
   [Range(0, 5)]
   public int column;
-  public NoteType noteType;
+  public NoteType type;
+  public float endTime;
 }
