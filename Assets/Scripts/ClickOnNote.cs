@@ -64,6 +64,8 @@ public class ClickOnNote : MonoBehaviour
         else
         {
             Debug.Log("Miss");
+            Time.timeScale = 0f;
+            
         }
 
         levelLauncher.notes.Remove(firstNote);
