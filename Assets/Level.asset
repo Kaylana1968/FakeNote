@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level
   m_EditorClassIdentifier: Assembly-CSharp::Level
   noteRows:
-  - time: 0
+  - time: 3
     notes:
     - column: 0
       noteType: 0
@@ -21,7 +21,7 @@ MonoBehaviour:
       noteType: 0
     - column: 2
       noteType: 0
-  - time: 1
+  - time: 5
     notes:
-    - column: 0
+    - column: 2
       noteType: 0
