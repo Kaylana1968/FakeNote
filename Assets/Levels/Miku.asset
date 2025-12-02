@@ -1,0 +1,336 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0830c87f3e695b2458ad0419b27839fe, type: 3}
+  m_Name: Miku
+  m_EditorClassIdentifier: Assembly-CSharp::Level
+  audio: {fileID: 8300000, guid: 70872ddad2c05a142bb3b3b99108f166, type: 3}
+  noteRows:
+  - time: 0.4
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 0.55
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 0.7
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 1
+    notes:
+    - column: 0
+      type: 1
+      isFake: 0
+      endTime: 1.4
+  - time: 1.5
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 1.9
+  - time: 2
+    notes:
+    - column: 0
+      type: 1
+      isFake: 0
+      endTime: 2.4
+  - time: 2.5
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 2.8
+  - time: 2.9
+    notes:
+    - column: 0
+      type: 1
+      isFake: 0
+      endTime: 3.2
+  - time: 3.2
+    notes:
+    - column: 2
+      type: 1
+      isFake: 0
+      endTime: 3.5
+  - time: 3.5
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 3.8
+  - time: 4
+    notes:
+    - column: 5
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 4.15
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 4.3
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 4.6
+    notes:
+    - column: 5
+      type: 1
+      isFake: 0
+      endTime: 5
+  - time: 5.1
+    notes:
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 5.5
+  - time: 5.6
+    notes:
+    - column: 5
+      type: 1
+      isFake: 0
+      endTime: 6
+  - time: 6.1
+    notes:
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 6.5
+  - time: 6.6
+    notes:
+    - column: 3
+      type: 1
+      isFake: 0
+      endTime: 6.9
+  - time: 6.9
+    notes:
+    - column: 5
+      type: 1
+      isFake: 0
+      endTime: 7.2
+  - time: 7.2
+    notes:
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 7.5
+  - time: 7.8
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 5
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 7.95
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 8.1
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 8.4
+    notes:
+    - column: 0
+      type: 1
+      isFake: 0
+      endTime: 8.8
+    - column: 5
+      type: 1
+      isFake: 0
+      endTime: 8.8
+  - time: 8.9
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 9.3
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 9.3
+  - time: 9.4
+    notes:
+    - column: 0
+      type: 1
+      isFake: 0
+      endTime: 9.8
+    - column: 5
+      type: 1
+      isFake: 0
+      endTime: 9.8
+  - time: 9.9
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 10.3
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 10.3
+  - time: 10.4
+    notes:
+    - column: 0
+      type: 1
+      isFake: 0
+      endTime: 10.7
+    - column: 3
+      type: 1
+      isFake: 0
+      endTime: 10.7
+  - time: 10.7
+    notes:
+    - column: 2
+      type: 1
+      isFake: 0
+      endTime: 11
+    - column: 5
+      type: 1
+      isFake: 0
+      endTime: 11
+  - time: 11
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 11.3
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 11.3
+  - time: 11.5
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 11.65
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 11.8
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 5
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 12.1
+    notes:
+    - column: 2
+      type: 1
+      isFake: 0
+      endTime: 12.50
+    - column: 3
+      type: 1
+      isFake: 0
+      endTime: 12.50
+  - time: 12.60
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 13
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 13
+  - time: 13.1
+    notes:
+    - column: 2
+      type: 1
+      isFake: 0
+      endTime: 13.5
+    - column: 3
+      type: 1
+      isFake: 0
+      endTime: 13.5
+  - time: 13.6
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 14
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 14
+  - time: 14.1
+    notes:
+    - column: 2
+      type: 1
+      isFake: 0
+      endTime: 14.40
+    - column: 5
+      type: 1
+      isFake: 0
+      endTime: 14.40
+  - time: 14.40
+    notes:
+    - column: 0
+      type: 1
+      isFake: 0
+      endTime: 14.70
+    - column: 3
+      type: 1
+      isFake: 0
+      endTime: 14.70
+  - time: 14.70
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 15
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 15
