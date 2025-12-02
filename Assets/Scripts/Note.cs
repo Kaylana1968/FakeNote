@@ -5,7 +5,6 @@ using UnityEngine;
 public enum NoteType
 {
   tap,
-  fake,
   hold
 }
 
@@ -21,6 +20,7 @@ public class Note
 {
   [Range(0, 5)]
   public int column;
+  public bool isFake;
   public NoteType type;
   public float endTime;
 }

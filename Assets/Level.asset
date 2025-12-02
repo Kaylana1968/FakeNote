@@ -16,24 +16,30 @@ MonoBehaviour:
   - time: 0
     notes:
     - column: 0
-      type: 2
+      isFake: 0
+      type: 1
       endTime: 3
     - column: 1
+      isFake: 0
       type: 0
       endTime: 0
     - column: 2
+      isFake: 0
       type: 0
       endTime: 0
   - time: 0
     notes:
     - column: 5
-      type: 2
+      isFake: 0
+      type: 1
       endTime: 5
   - time: 3
     notes:
     - column: 3
+      isFake: 0
       type: 0
       endTime: 0
     - column: 4
+      isFake: 0
       type: 0
       endTime: 0
