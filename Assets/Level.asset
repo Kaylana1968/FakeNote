@@ -12,28 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0830c87f3e695b2458ad0419b27839fe, type: 3}
   m_Name: Level
   m_EditorClassIdentifier: Assembly-CSharp::Level
-  notes:
-  - column: 0
-    time: 1
-    followingNotes: []
-  - column: 1
-    time: 1
-    followingNotes: []
-  - column: 2
-    time: 1
-    followingNotes: []
-  - column: 3
-    time: 1
-    followingNotes: []
-  - column: 4
-    time: 1
-    followingNotes: []
-  - column: 5
-    time: 1
-    followingNotes: []
-  - column: 5
-    time: 3
-    followingNotes: []
-  - column: 2
-    time: 3
-    followingNotes: []
+  noteRows:
+  - time: 0
+    notes:
+    - column: 0
+      noteType: 0
+    - column: 1
+      noteType: 0
+    - column: 2
+      noteType: 0
+  - time: 1
+    notes:
+    - column: 0
+      noteType: 0

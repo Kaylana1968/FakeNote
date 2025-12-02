@@ -1,48 +1,68 @@
 using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 
 public class LevelLauncher : MonoBehaviour
 {
   [SerializeField] GameObject tapNote;
 
-  readonly List<Vector3> spawnPoints = new()
-  {
-    new(0.6f, 0f, 90f),
-    new(1.7f, 0f, 90f),
-    new(2.8f, 0f, 90f),
-    new(3.9f, 0f, 90f),
-    new(5.0f, 0f, 90f),
-    new(6.1f, 0f, 90f),
-  };
+  // readonly List<Vector3> spawnPoints = new()
+  // {
+  //   new(0.6f, 0f, 90f),
+  //   new(1.7f, 0f, 90f),
+  //   new(2.8f, 0f, 90f),
+  //   new(3.9f, 0f, 90f),
+  //   new(5.0f, 0f, 90f),
+  //   new(6.1f, 0f, 90f),
+  // };
 
   public Level level;
   float elapsedTime;
   int currentNoteIndex;
+  public List<Transform> columns = new();
+  public List<Transform> notes = new();
+  readonly float speed = 5f;
 
   void Start()
   {
     elapsedTime = 0;
     currentNoteIndex = 0;
+
+    foreach (Transform child in transform)
+        {
+            columns.Add(child);
+        }
   } 
 
   void FixedUpdate()
   {
     elapsedTime += Time.deltaTime;
 
-    if (currentNoteIndex >= level.noteRows.Count) return;
-
-    while (level.noteRows[currentNoteIndex].time < elapsedTime)
+    if (currentNoteIndex < level.noteRows.Count)
     {
-      NoteRow noteRow = level.noteRows[currentNoteIndex];
-      foreach (Note note in noteRow.notes)
+      while (level.noteRows[currentNoteIndex].time <= elapsedTime)
       {
-        GameObject gameObject = Instantiate(tapNote, spawnPoints[note.column], Quaternion.Euler(new Vector3(90f, 0f, 0f)));
-        gameObject.transform.parent = transform;        
+        NoteRow noteRow = level.noteRows[currentNoteIndex];
+        foreach (Note note in noteRow.notes)
+        {
+          GameObject newNote = Instantiate(tapNote, Vector3.zero, Quaternion.Euler(new Vector3(90f, 0f, 0f)));
+          newNote.transform.parent = columns[note.column];
+          newNote.transform.localPosition = new Vector3(0,0,90);
+          notes.Add(newNote.transform);       
+        }
+
+        currentNoteIndex++;
+
+        if (currentNoteIndex >= level.noteRows.Count) break;
       }
+    }
 
-      currentNoteIndex++;
+    float step = speed * Time.deltaTime;
+    Vector3 movement = step * new Vector3(0f, 0f, -1f);
 
-      if (currentNoteIndex >= level.noteRows.Count) return;
+    foreach (Transform note in notes)
+    {
+        note.position += movement;
     }
   }
 }
