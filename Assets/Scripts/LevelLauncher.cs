@@ -11,7 +11,7 @@ public class LevelLauncher : MonoBehaviour
   public List<Transform> notes = new();
 
 	readonly float startPauseTime = 3f;
-  readonly float speed = 5f;
+  readonly float speed = 20f;
   readonly List<Color> colors = new()
   {
     new Color(0.7f, 0f, 0f),
