@@ -1,12 +1,18 @@
 using System;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using System.Collections.Generic;
 using UnityEngine.InputSystem;
 
 public class ClickOnNote : MonoBehaviour
 {
+  public TMP_Text ScoreText;
+  public int score;
 	[SerializeField] LevelLauncher levelLauncher;
-	[SerializeField] ParticleSystem[] particleSystems;
+  [SerializeField] ParticleSystem[] particleSystems;
+  public GameObject container;
 
 	InputSystem_Actions inputs;
 	List<InputAction> inputActions;
@@ -89,10 +95,47 @@ public class ClickOnNote : MonoBehaviour
 		{
 			main.loop = false;
 
-			levelLauncher.notes.Remove(firstNote);
-			Destroy(firstNote.gameObject);
-		}
+    private void Update()
+    {
+        ScoreText.text = "Score: " + score;
+    }
+    private void Click(int columnIndex)
+    {
+        Transform column = levelLauncher.columns[columnIndex];
+        Transform firstNote = column.GetChild(0);
 
-		particleSystem.Play();
-	}
+        float distance = Mathf.Abs(firstNote.position.z - transform.position.z);
+
+        particleSystems[columnIndex].Play();
+
+        if (distance < 0.3)
+        {
+            Debug.Log("Perfect");
+            score += 300;
+        }
+        else if (distance < 0.6)
+        {
+            Debug.Log("Good");
+            score += 100;
+        }
+        else
+        {
+            Debug.Log("Miss");
+            container.SetActive(true);
+            Time.timeScale = 0f;
+            
+        }
+
+        levelLauncher.notes.Remove(firstNote);
+        Destroy(firstNote.gameObject);
+        particleSystem.Play();
+    }
+
+    public void RetryButton() 
+    {
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(currentSceneName);
+        Debug.Log(currentSceneName);
+
+    }
 }
