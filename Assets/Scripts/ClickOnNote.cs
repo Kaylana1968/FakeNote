@@ -1,8 +1,13 @@
+using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ClickOnNote : MonoBehaviour
 {
+    public TMP_Text ScoreText;
+    public int score;
 	[SerializeField] LevelLauncher levelLauncher;
     [SerializeField] ParticleSystem[] particleSystems;
     public GameObject container;
@@ -46,6 +51,10 @@ public class ClickOnNote : MonoBehaviour
 		};
 	}
 
+    private void Update()
+    {
+        ScoreText.text = "Score: " + score;
+    }
     private void Click(int columnIndex)
     {
         Transform column = levelLauncher.columns[columnIndex];
@@ -58,10 +67,12 @@ public class ClickOnNote : MonoBehaviour
         if (distance < 0.3)
         {
             Debug.Log("Perfect");
+            score += 300;
         }
         else if (distance < 0.6)
         {
             Debug.Log("Good");
+            score += 100;
         }
         else
         {
