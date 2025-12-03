@@ -20,13 +20,13 @@ MonoBehaviour:
       type: 0
       isFake: 0
       endTime: 0
-  - time: 0.55
+  - time: 0.6
     notes:
     - column: 1
       type: 0
       isFake: 0
       endTime: 0
-  - time: 0.7
+  - time: 0.8
     notes:
     - column: 2
       type: 0
@@ -80,13 +80,13 @@ MonoBehaviour:
       type: 0
       isFake: 0
       endTime: 0
-  - time: 4.15
+  - time: 4.2
     notes:
     - column: 4
       type: 0
       isFake: 0
       endTime: 0
-  - time: 4.3
+  - time: 4.4
     notes:
     - column: 3
       type: 0
@@ -144,7 +144,7 @@ MonoBehaviour:
       type: 0
       isFake: 0
       endTime: 0
-  - time: 7.95
+  - time: 8
     notes:
     - column: 1
       type: 0
@@ -154,7 +154,7 @@ MonoBehaviour:
       type: 0
       isFake: 0
       endTime: 0
-  - time: 8.1
+  - time: 8.2
     notes:
     - column: 2
       type: 0
@@ -244,7 +244,7 @@ MonoBehaviour:
       type: 0
       isFake: 0
       endTime: 0
-  - time: 11.65
+  - time: 11.7
     notes:
     - column: 1
       type: 0
@@ -254,7 +254,7 @@ MonoBehaviour:
       type: 0
       isFake: 0
       endTime: 0
-  - time: 11.8
+  - time: 11.9
     notes:
     - column: 0
       type: 0
@@ -574,13 +574,13 @@ MonoBehaviour:
       type: 0
       isFake: 0
       endTime: 0
-  - time: 30.55 # thin
+  - time: 30.6 # thin
     notes:
     - column: 1
       type: 0
       isFake: 0
       endTime: 0
-  - time: 30.7 # king
+  - time: 30.8 # king
     notes:
     - column: 2
       type: 0
@@ -634,13 +634,13 @@ MonoBehaviour:
       type: 0
       isFake: 0
       endTime: 0
-  - time: 34.15 # thin
+  - time: 34.2 # thin
     notes:
     - column: 4
       type: 0
       isFake: 0
       endTime: 0
-  - time: 34.3 # king
+  - time: 34.4 # king
     notes:
     - column: 3
       type: 0
@@ -698,7 +698,7 @@ MonoBehaviour:
       type: 0
       isFake: 0
       endTime: 0
-  - time: 37.95 # thin
+  - time: 38 # thin
     notes:
     - column: 1
       type: 0
@@ -708,7 +708,7 @@ MonoBehaviour:
       type: 0
       isFake: 0
       endTime: 0
-  - time: 38.1 # king
+  - time: 38.2 # king
     notes:
     - column: 2
       type: 0
@@ -798,7 +798,7 @@ MonoBehaviour:
       type: 0
       isFake: 0
       endTime: 0
-  - time: 41.65 # thin
+  - time: 41.7 # thin
     notes:
     - column: 1
       type: 0
@@ -808,7 +808,7 @@ MonoBehaviour:
       type: 0
       isFake: 0
       endTime: 0
-  - time: 41.8 # king
+  - time: 41.9 # king
     notes:
     - column: 0
       type: 0
@@ -928,3 +928,1841 @@ MonoBehaviour:
       type: 1
       isFake: 0
       endTime: 47.6
+  - time: 48.5 # be
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 48.9 # cause
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 49.1 # of
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 49.3 # you
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 49.8 # all
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 50.3 # I
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 50.8 # wan
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 51 # ted
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 51.2 # to
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 51.4 # do
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 52 # is
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 52.6 # fol
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 52.8 # low
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 53 # you
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 53.5 # I'll
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 54 # keep
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 54.5 # sin
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 54.7 # ging
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 54.9 # a
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 55.1 # long
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 55.7 # to
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 56.3 # all
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 56.5 # of
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 56.7 # you
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 57.3 # I'll
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 57.8 # keep
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 58.3 # sin
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 58.5 # ging
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 58.7 # a
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 58.9 # long
+    notes:
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 59.5
+  - time: 60.3
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 60.5
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 60.7
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 60.9
+    notes:
+    - column: 0
+      type: 1
+      isFake: 0
+      endTime: 61.3
+  - time: 61.4
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 61.8
+  - time: 61.9
+    notes:
+    - column: 0
+      type: 1
+      isFake: 0
+      endTime: 62.3
+  - time: 62.4
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 62.7
+  - time: 62.8
+    notes:
+    - column: 0
+      type: 1
+      isFake: 0
+      endTime: 63.1
+  - time: 63.1
+    notes:
+    - column: 2
+      type: 1
+      isFake: 0
+      endTime: 63.4
+  - time: 63.4
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 63.7
+  - time: 63.9
+    notes:
+    - column: 5
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 64.1
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 64.3
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 64.5
+    notes:
+    - column: 5
+      type: 1
+      isFake: 0
+      endTime: 64.9
+  - time: 65
+    notes:
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 65.4
+  - time: 65.5
+    notes:
+    - column: 5
+      type: 1
+      isFake: 0
+      endTime: 65.9
+  - time: 66
+    notes:
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 66.4
+  - time: 66.5
+    notes:
+    - column: 3
+      type: 1
+      isFake: 0
+      endTime: 66.8
+  - time: 66.8
+    notes:
+    - column: 5
+      type: 1
+      isFake: 0
+      endTime: 67.1
+  - time: 67.1
+    notes:
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 67.4
+  - time: 67.7
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 5
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 67.9
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 68.1
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 68.3
+    notes:
+    - column: 0
+      type: 1
+      isFake: 0
+      endTime: 68.7
+    - column: 5
+      type: 1
+      isFake: 0
+      endTime: 68.7
+  - time: 68.8
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 69.2
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 69.2
+  - time: 69.3
+    notes:
+    - column: 0
+      type: 1
+      isFake: 0
+      endTime: 69.7
+    - column: 5
+      type: 1
+      isFake: 0
+      endTime: 69.7
+  - time: 69.8
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 70.2
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 70.2
+  - time: 70.3
+    notes:
+    - column: 0
+      type: 1
+      isFake: 0
+      endTime: 70.6
+    - column: 3
+      type: 1
+      isFake: 0
+      endTime: 70.6
+  - time: 70.6
+    notes:
+    - column: 2
+      type: 1
+      isFake: 0
+      endTime: 70.9
+    - column: 5
+      type: 1
+      isFake: 0
+      endTime: 70.9
+  - time: 70.9
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 71.2
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 71.2
+  - time: 71.4
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 71.6
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 71.8
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 5
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 72
+    notes:
+    - column: 2
+      type: 1
+      isFake: 0
+      endTime: 72.4
+    - column: 3
+      type: 1
+      isFake: 0
+      endTime: 72.4
+  - time: 72.5
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 72.9
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 72.9
+  - time: 73
+    notes:
+    - column: 2
+      type: 1
+      isFake: 0
+      endTime: 73.4
+    - column: 3
+      type: 1
+      isFake: 0
+      endTime: 73.4
+  - time: 73.5
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 73.9
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 73.9
+  - time: 74
+    notes:
+    - column: 2
+      type: 1
+      isFake: 0
+      endTime: 74.3
+    - column: 5
+      type: 1
+      isFake: 0
+      endTime: 74.3
+  - time: 74.3
+    notes:
+    - column: 0
+      type: 1
+      isFake: 0
+      endTime: 74.6
+    - column: 3
+      type: 1
+      isFake: 0
+      endTime: 74.6
+  - time: 74.6
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 74.9
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 74.9
+  - time: 76
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 76.5
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 77
+    notes:
+    - column: 2
+      type: 1
+      isFake: 0
+      endTime: 78
+    - column: 3
+      type: 1
+      isFake: 0
+      endTime: 78
+  - time: 77.5
+    notes:
+    - column: 0
+      type: 1
+      isFake: 0
+      endTime: 77.6
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 77.75
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 77.75
+    - column: 5
+      type: 1
+      isFake: 0
+      endTime: 77.6
+  - time: 78.5
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 78.9
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 79.1
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 79.3
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 79.8
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 80.3
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 80.8
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 81
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 81.2
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 81.4
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 82
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 82.6
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 82.8
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 83
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 83.5
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 84
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 84.5
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 84.7
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 84.9
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 85.1
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 85.7
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 86.3
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 86.5
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 86.7
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 87.3
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 87.8
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 88.3
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 88.5
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 88.7
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 88.9
+    notes:
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 89.5
+  - time: 90.4
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 90.6
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 90.8
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 91
+    notes:
+    - column: 0
+      type: 1
+      isFake: 0
+      endTime: 91.4
+  - time: 91.5
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 91.9
+  - time: 92
+    notes:
+    - column: 0
+      type: 1
+      isFake: 0
+      endTime: 92.4
+  - time: 92.5
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 92.8
+  - time: 92.9
+    notes:
+    - column: 0
+      type: 1
+      isFake: 0
+      endTime: 93.2
+  - time: 93.2
+    notes:
+    - column: 2
+      type: 1
+      isFake: 0
+      endTime: 93.5
+  - time: 93.5
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 93.8
+  - time: 94
+    notes:
+    - column: 5
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 94.2
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 94.4
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 94.6
+    notes:
+    - column: 5
+      type: 1
+      isFake: 0
+      endTime: 95
+  - time: 95.1
+    notes:
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 95.5
+  - time: 95.6
+    notes:
+    - column: 5
+      type: 1
+      isFake: 0
+      endTime: 96
+  - time: 96.1
+    notes:
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 96.5
+  - time: 96.6
+    notes:
+    - column: 3
+      type: 1
+      isFake: 0
+      endTime: 96.9
+  - time: 96.9
+    notes:
+    - column: 5
+      type: 1
+      isFake: 0
+      endTime: 97.2
+  - time: 97.2
+    notes:
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 97.5
+  - time: 97.8
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 5
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 98
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 98.2
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 98.4
+    notes:
+    - column: 0
+      type: 1
+      isFake: 0
+      endTime: 98.8
+    - column: 5
+      type: 1
+      isFake: 0
+      endTime: 98.8
+  - time: 98.9
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 99.3
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 99.3
+  - time: 99.4
+    notes:
+    - column: 0
+      type: 1
+      isFake: 0
+      endTime: 99.8
+    - column: 5
+      type: 1
+      isFake: 0
+      endTime: 99.8
+  - time: 99.9
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 100.3
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 100.3
+  - time: 100.4
+    notes:
+    - column: 0
+      type: 1
+      isFake: 0
+      endTime: 100.7
+    - column: 3
+      type: 1
+      isFake: 0
+      endTime: 100.7
+  - time: 100.7
+    notes:
+    - column: 2
+      type: 1
+      isFake: 0
+      endTime: 101
+    - column: 5
+      type: 1
+      isFake: 0
+      endTime: 101
+  - time: 101
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 101.3
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 101.3
+  - time: 101.5
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 101.7
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 101.9
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 5
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 102.1
+    notes:
+    - column: 2
+      type: 1
+      isFake: 0
+      endTime: 102.5
+    - column: 3
+      type: 1
+      isFake: 0
+      endTime: 102.5
+  - time: 102.6
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 103
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 103
+  - time: 103.1
+    notes:
+    - column: 2
+      type: 1
+      isFake: 0
+      endTime: 103.5
+    - column: 3
+      type: 1
+      isFake: 0
+      endTime: 103.5
+  - time: 103.6
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 104
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 104
+  - time: 104.1
+    notes:
+    - column: 2
+      type: 1
+      isFake: 0
+      endTime: 104.4
+    - column: 5
+      type: 1
+      isFake: 0
+      endTime: 104.4
+  - time: 104.4
+    notes:
+    - column: 0
+      type: 1
+      isFake: 0
+      endTime: 104.7
+    - column: 3
+      type: 1
+      isFake: 0
+      endTime: 104.7
+  - time: 104.7
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 105
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 105
+  - time: 106
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 106.8
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 107.7
+    notes:
+    - column: 5
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 107.9
+    notes:
+    - column: 5
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 108.3
+    notes:
+    - column: 5
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 113.5 # where
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 113.65 # were
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 113.8 # we
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 114 # walking
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 114.2 # to
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 114.4 # ge
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 114.6 # ther
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 114.9 # I
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 115.1 # will
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 115.3 # see
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 115.5 # you
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 115.8 # in
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 116 # the
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 116.3 # end
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 117 # I'll
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 117.2 # take
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 117.4 # you
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 117.6 # where
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 117.8 # you've
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 118.1 # ne
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 118.3 # ver
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 118.5 # been
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 118.9 # and
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 119.1 # bring
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 119.3 # you
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 119.5 # back
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 119.8 # a
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 120.1 # gain
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 120.9 # lis
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 121.2 # ten
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 121.45 # to
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 121.7 # me
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 121.95 # with
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 122.2 # your
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 122.4 # eyes
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 122.7 # I'm
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 122.9 # wat
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 123.1 # ching
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 123.3 # you
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 123.5 # from
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 123.7 # in
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 124 # the
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 124.2 # sky
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 124.5 # if
+    notes:
+    - column: 5
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 124.8 # you've
+    notes:
+    - column: 5
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 125.05 # for
+    notes:
+    - column: 5
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 125.3 # get
+    notes:
+    - column: 5
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 125.55 # I'll
+    notes:
+    - column: 5
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 125.8 # fade
+    notes:
+    - column: 5
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 126 # a
+    notes:
+    - column: 5
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 126.2 # way
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 126.4 # I'm
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 126.6 # as
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 126.8 # king
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 127 # you
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 127.3 # to
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 127.5 # let
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 127.8 # me
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 128 # stay
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 128.5 # bathe
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 128.7 # me
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 128.9 # in
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 129.1 # your
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 129.4 # ma
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 129.6 # gic
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 129.8 # light
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 130.1 # and
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 130.3 # keep
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 130.6 # it
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 130.9 # on
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 131.1 # in
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 131.3 # dar
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 131.45 # kest
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 131.6 # night
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 132 # I
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 132.2 # need
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 132.4 # you
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 132.6 # here
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 132.8 # to
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 133.1 # keep
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 133.25 # me
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 133.4 # strong
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 133.9 # to
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 134.1 # live
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 134.3 # my
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 134.5 # life
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 134.8 # and
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 135 # sing
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 135.2 # a
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 135.4 # long
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 135.8 # I'm
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 136 # wai
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 136.2 # ting
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 136.4 # with
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 136.6 # you
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 136.9 # wide
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 137.1 # a
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 137.3 # wake
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 137.6 # like
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 137.8 # your
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 138 # ex
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 138.2 # pen
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 138.5 # sive
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 138.8 # poi
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 139 # son
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 139.2 # snake
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 139.4 # you
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 139.7 # found
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 139.9 # me
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 140.15 # here
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 140.4 # in
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 140.6 # side
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 140.8 # the
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 141 # dream
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 141.4 # walk
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 141.6 # through
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 141.8 # the
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 142 # fi
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 142.2 # re
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 142.5 # straight
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 142.7 # to
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 142.9 # me
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 145.2
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 151.5
+  - time: 145.3
+    notes:
+    - column: 3
+      type: 1
+      isFake: 0
+      endTime: 151.5
+  - time: 145.4
+    notes:
+    - column: 5
+      type: 1
+      isFake: 0
+      endTime: 151.5
+  - time: 145.5
+    notes:
+    - column: 0
+      type: 1
+      isFake: 0
+      endTime: 151.5
+  - time: 145.6
+    notes:
+    - column: 2
+      type: 1
+      isFake: 0
+      endTime: 151.5
+  - time: 145.7
+    notes:
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 151.5
