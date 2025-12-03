@@ -5,6 +5,6 @@ public class ChangeSceneToGame : MonoBehaviour
 {
 	public void MoveToGameScene()
 	{
-		SceneManager.LoadScene("Nicolas");
+		SceneManager.LoadScene("GameScene");
 	}
 }
