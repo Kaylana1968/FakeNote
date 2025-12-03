@@ -12,6 +12,9 @@ public class LevelLauncher : MonoBehaviour
 	public List<Transform> columns = new();
 	public List<Transform> notes = new();
 
+	public bool isPaused = false;
+	double pauseStartDSP;
+	double pauseTime = 0;
 	readonly float musicStartAt = 0f;
 	readonly float startPauseTime = 2f;
 	readonly float speed = 5f;
@@ -89,15 +92,36 @@ public class LevelLauncher : MonoBehaviour
 
 	void Update()
 	{
-		double musicTime = AudioSettings.dspTime - musicStartDSPTime + musicStartAt;
+        double musicTime = AudioSettings.dspTime - musicStartDSPTime - pauseTime + musicStartAt;
 
-		foreach (Transform note in notes)
+        foreach (Transform note in notes)
 		{
-			NoteData data = note.GetComponent<NoteData>();
+			if(!isPaused) 
+			{
+				NoteData data = note.GetComponent<NoteData>();
 
-			float targetZ = (data.time - (float)musicTime) * speed;
+				float targetZ = (data.time - (float)musicTime) * speed;
 
-			note.localPosition = new Vector3(0f, 0f, targetZ + 3.5f);
+				note.localPosition = new Vector3(0f, 0f, targetZ + 3.5f);
+			}
 		}
+	}
+
+	public void PauseMusic()
+	{
+		if(isPaused) return;
+
+		isPaused = true;
+		pauseStartDSP = AudioSettings.dspTime;
+		audioSource.Pause();
+	}
+
+	public void ResumeMusic()
+	{
+		if (!isPaused) return;
+
+		isPaused = false;
+		pauseTime += AudioSettings.dspTime - pauseStartDSP;
+        audioSource.UnPause();
 	}
 }
