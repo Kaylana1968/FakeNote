@@ -5,16 +5,20 @@ using UnityEngine.SceneManagement;
 public class LevelBlock : MonoBehaviour
 {
     public Text titleText;
-    private string sceneName;
-
-    public void Setup(string sceneName)
+    public Text descriptionText;
+    public Text difficultyText;
+    private Level level;
+    public void Setup(LevelParameters levelBlock)
     {
-        this.sceneName = sceneName;
-        titleText.text = sceneName;
+        titleText.text = levelBlock.levelName ?? "Untitled";
+        descriptionText.text = levelBlock.levelDescription ?? "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+        difficultyText.text = "Difficulty : " + (levelBlock.levelDificulty ?? "1");
+        level = levelBlock.level;
     }
 
     public void PlayLevel()
     {
-        SceneManager.LoadScene(sceneName);
+        if (level != null) LevelSelection.SelectedLevel = level;
+        SceneManager.LoadScene("GameScene");
     }
 }

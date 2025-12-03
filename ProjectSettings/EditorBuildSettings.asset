@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Kilian.unity
+    path: Assets/Scenes/Home.unity
     guid: 3fc44f3a7e78a33469f7171bbd8bf2d3
   - enabled: 1
     path: Assets/Scenes/GameScene.unity
