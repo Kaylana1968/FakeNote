@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 80713954}
   - component: {fileID: 80713953}
   m_Layer: 0
-  m_Name: Stars_model_3
+  m_Name: Little_stars_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 265348254}
   - component: {fileID: 265348253}
   m_Layer: 0
-  m_Name: Stars_model_3 (13)
+  m_Name: Little_stars_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -389,7 +389,7 @@ GameObject:
   - component: {fileID: 389196996}
   - component: {fileID: 389196995}
   m_Layer: 0
-  m_Name: Stars_model_3 (9)
+  m_Name: Little_stars_16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -479,7 +479,7 @@ GameObject:
   - component: {fileID: 420157483}
   - component: {fileID: 420157482}
   m_Layer: 0
-  m_Name: Stars_model_3 (19)
+  m_Name: Little_stars_18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -569,7 +569,7 @@ GameObject:
   - component: {fileID: 544792509}
   - component: {fileID: 544792508}
   m_Layer: 0
-  m_Name: Stars_model_3 (7)
+  m_Name: Little_stars_14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -659,7 +659,7 @@ GameObject:
   - component: {fileID: 592248318}
   - component: {fileID: 592248317}
   m_Layer: 0
-  m_Name: Stars_model_3 (18)
+  m_Name: Little_stars_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -749,7 +749,7 @@ GameObject:
   - component: {fileID: 597127384}
   - component: {fileID: 597127383}
   m_Layer: 0
-  m_Name: Stars_model_3 (14)
+  m_Name: Little_stars_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -839,7 +839,7 @@ GameObject:
   - component: {fileID: 631738251}
   - component: {fileID: 631738250}
   m_Layer: 0
-  m_Name: Stars_model_3 (17)
+  m_Name: Little_stars_13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -929,7 +929,7 @@ GameObject:
   - component: {fileID: 670131013}
   - component: {fileID: 670131012}
   m_Layer: 0
-  m_Name: Stars_model_3 (12)
+  m_Name: Little_stars_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1236,7 +1236,7 @@ GameObject:
   - component: {fileID: 978676692}
   - component: {fileID: 978676691}
   m_Layer: 0
-  m_Name: Stars_model_3 (5)
+  m_Name: Little_stars_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1643,7 +1643,7 @@ GameObject:
   - component: {fileID: 1391267103}
   - component: {fileID: 1391267102}
   m_Layer: 0
-  m_Name: Stars_model_3 (1)
+  m_Name: Little_stars_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1870,7 +1870,7 @@ GameObject:
   - component: {fileID: 1555489530}
   - component: {fileID: 1555489529}
   m_Layer: 0
-  m_Name: Stars_model_3 (6)
+  m_Name: Little_stars_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1960,7 +1960,7 @@ GameObject:
   - component: {fileID: 1567295013}
   - component: {fileID: 1567295012}
   m_Layer: 0
-  m_Name: Stars_model_3 (10)
+  m_Name: Little_stars_17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2050,7 +2050,7 @@ GameObject:
   - component: {fileID: 1643338238}
   - component: {fileID: 1643338237}
   m_Layer: 0
-  m_Name: Stars_model_3 (8)
+  m_Name: Little_stars_15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2140,7 +2140,7 @@ GameObject:
   - component: {fileID: 1687844542}
   - component: {fileID: 1687844541}
   m_Layer: 0
-  m_Name: Stars_model_3 (15)
+  m_Name: Little_stars_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2230,7 +2230,7 @@ GameObject:
   - component: {fileID: 1702213787}
   - component: {fileID: 1702213786}
   m_Layer: 0
-  m_Name: Stars_model_3 (2)
+  m_Name: Little_stars_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2453,7 +2453,7 @@ GameObject:
   - component: {fileID: 1820644080}
   - component: {fileID: 1820644079}
   m_Layer: 0
-  m_Name: Stars_model_3 (16)
+  m_Name: Little_stars_20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2543,7 +2543,7 @@ GameObject:
   - component: {fileID: 1837712818}
   - component: {fileID: 1837712817}
   m_Layer: 0
-  m_Name: Stars_model_3 (3)
+  m_Name: Little_stars_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2633,7 +2633,7 @@ GameObject:
   - component: {fileID: 1848840330}
   - component: {fileID: 1848840329}
   m_Layer: 0
-  m_Name: Stars_model_3 (11)
+  m_Name: Little_stars_19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2950,7 +2950,7 @@ GameObject:
   - component: {fileID: 1962969608}
   - component: {fileID: 1962969607}
   m_Layer: 0
-  m_Name: Stars_model_3 (4)
+  m_Name: Little_stars_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
