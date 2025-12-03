@@ -958,12 +958,6 @@ MonoBehaviour:
       type: 0
       isFake: 0
       endTime: 0
-  - time: 49.8 # all
-    notes:
-    - column: 3
-      type: 0
-      isFake: 0
-      endTime: 0
   - time: 50.3 # I
     notes:
     - column: 3
@@ -1495,12 +1489,6 @@ MonoBehaviour:
   - time: 79.3
     notes:
     - column: 2
-      type: 0
-      isFake: 0
-      endTime: 0
-  - time: 79.8
-    notes:
-    - column: 3
       type: 0
       isFake: 0
       endTime: 0
