@@ -203,6 +203,8 @@ public class ClickOnNote : MonoBehaviour
 					combo = 0;
                     levelLauncher.notes.Remove(note);
                     Destroy(note.gameObject);
+                    inputActions[columnIndex].canceled -= canceledCallbacks[columnIndex];
+					particleSystems[columnIndex].Stop();
                 }
             }else
             {
