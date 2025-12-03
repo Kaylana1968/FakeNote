@@ -2364,3 +2364,417 @@ MonoBehaviour:
       type: 0
       isFake: 0
       endTime: 0
+  - time: 128.5 # bathe
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 128.7 # me
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 128.9 # in
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 129.1 # your
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 129.4 # ma
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 129.6 # gic
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 129.8 # light
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 130.1 # and
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 130.3 # keep
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 130.6 # it
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 130.9 # on
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 131.1 # in
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 131.3 # dar
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 131.45 # kest
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 131.6 # night
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 132 # I
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 132.2 # need
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 132.4 # you
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 132.6 # here
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 132.8 # to
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 133.1 # keep
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 133.25 # me
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 133.4 # strong
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 133.9 # to
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 134.1 # live
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 134.3 # my
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 134.5 # life
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 134.8 # and
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 135 # sing
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 135.2 # a
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 135.4 # long
+    notes:
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 135.8 # I'm
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 136 # wai
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 136.2 # ting
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 136.4 # with
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 136.6 # you
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 136.9 # wide
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 137.1 # a
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 137.3 # wake
+    notes:
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 137.6 # like
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 137.8 # your
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 138 # ex
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 138.2 # pen
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 138.5 # sive
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 138.8 # poi
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 139 # son
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 139.2 # snake
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 139.4 # you
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 139.7 # found
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 139.9 # me
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 140.15 # here
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 140.4 # in
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 140.6 # side
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 140.8 # the
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 141 # dream
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 141.4 # walk
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 141.6 # through
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 141.8 # the
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 142 # fi
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 142.2 # re
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 142.5 # straight
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 142.7 # to
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 142.9 # me
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 145.2
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 151.5
+  - time: 145.3
+    notes:
+    - column: 3
+      type: 1
+      isFake: 0
+      endTime: 151.5
+  - time: 145.4
+    notes:
+    - column: 5
+      type: 1
+      isFake: 0
+      endTime: 151.5
+  - time: 145.5
+    notes:
+    - column: 0
+      type: 1
+      isFake: 0
+      endTime: 151.5
+  - time: 145.6
+    notes:
+    - column: 2
+      type: 1
+      isFake: 0
+      endTime: 151.5
+  - time: 145.7
+    notes:
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 151.5
