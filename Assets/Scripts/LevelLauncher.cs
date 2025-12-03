@@ -35,7 +35,7 @@ public class LevelLauncher : MonoBehaviour
 			musicStartDSPTime = AudioSettings.dspTime + startPauseTime;
 
 			audioSource.clip = level.audio;
-			audioSource.PlayScheduled(musicStartDSPTime - 1.0);
+			audioSource.PlayScheduled(musicStartDSPTime);
 		}
 
 		foreach (Transform child in transform)
@@ -89,11 +89,11 @@ public class LevelLauncher : MonoBehaviour
 
 		foreach (Transform note in notes)
 		{
-			var data = note.GetComponent<NoteData>();
+			NoteData data = note.GetComponent<NoteData>();
 
 			float targetZ = (data.time - (float)musicTime) * speed;
 
-			note.localPosition = new Vector3(0f, 0f, targetZ);
+			note.localPosition = new Vector3(0f, 0f, targetZ + 3.5f);
 		}
 	}
 }
