@@ -58,8 +58,7 @@ public class LevelLauncher : MonoBehaviour
 
 				NoteData data = newNote.AddComponent<NoteData>();
 				data.time = noteRow.time;
-				data.isHold = note.type == NoteType.hold;
-				data.endTime = note.endTime;
+				data.isFake = note.isFake;
 
 				Color color = colors[note.column];
 				newNote.GetComponent<SpriteRenderer>().color = color;
