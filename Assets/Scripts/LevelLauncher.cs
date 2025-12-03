@@ -5,7 +5,7 @@ public class LevelLauncher : MonoBehaviour
 {
 	[SerializeField] GameObject tapNote;
 	[SerializeField] GameObject noteTrail;
-	
+
 	AudioSource audioSource;
 	public Level level;
 	public List<Transform> columns = new();
@@ -24,15 +24,19 @@ public class LevelLauncher : MonoBehaviour
 	};
 	readonly Quaternion angle = Quaternion.Euler(new Vector3(90f, 0f, 0f));
 
+	double musicStartDSPTime;
+
 	void Start()
 	{
 		audioSource = GetComponent<AudioSource>();
 
 		if (level != null && level.audio != null)
-        {
-            audioSource.clip = level.audio;
-			audioSource.PlayDelayed(startPauseTime);
-        }
+		{
+			musicStartDSPTime = AudioSettings.dspTime + startPauseTime;
+
+			audioSource.clip = level.audio;
+			audioSource.PlayScheduled(musicStartDSPTime - 1.0);
+		}
 
 		foreach (Transform child in transform)
 		{
@@ -49,6 +53,11 @@ public class LevelLauncher : MonoBehaviour
 				newNote.transform.parent = columns[note.column];
 				newNote.transform.localPosition = new Vector3(0f, 0f, newNote.transform.localPosition.z);
 				notes.Add(newNote.transform);
+
+				NoteData data = newNote.AddComponent<NoteData>();
+				data.time = noteRow.time;
+				data.isHold = note.type == NoteType.hold;
+				data.endTime = note.endTime;
 
 				Color color = colors[note.column];
 				newNote.GetComponent<SpriteRenderer>().color = color;
@@ -68,20 +77,23 @@ public class LevelLauncher : MonoBehaviour
 					trail.transform.localScale = new Vector3(0.75f, Mathf.Abs(newNote.transform.position.z - endNote.transform.position.z) - 0.5f, 1f);
 
 					endNote.GetComponent<SpriteRenderer>().color = color;
-					trail.GetComponent<SpriteRenderer>().color = new Color(color.a, color.g, color.b, 0.5f);
+					trail.GetComponent<SpriteRenderer>().color = new Color(color.r, color.g, color.b, 0.5f);
 				}
 			}
 		}
 	}
 
-	void FixedUpdate()
+	void Update()
 	{
-		float step = speed * Time.deltaTime;
-		Vector3 movement = step * new Vector3(0f, 0f, -1f);
+		double musicTime = AudioSettings.dspTime - musicStartDSPTime;
 
 		foreach (Transform note in notes)
 		{
-			note.position += movement;
+			var data = note.GetComponent<NoteData>();
+
+			float targetZ = (data.time - (float)musicTime) * speed;
+
+			note.localPosition = new Vector3(0f, 0f, targetZ);
 		}
 	}
 }
