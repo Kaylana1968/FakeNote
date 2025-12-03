@@ -1,7 +1,6 @@
 using System;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
@@ -11,15 +10,10 @@ public class ClickOnNote : MonoBehaviour
 {
 	[SerializeField] TMP_Text ScoreText;
 	[SerializeField] TMP_Text ComboText;
-	[SerializeField] GameObject container;
 	[SerializeField] LevelLauncher levelLauncher;
+	[SerializeField] EndMenu endMenu;
 	[SerializeField] ParticleSystem[] particleSystems;
     [SerializeField] Transform validationBar;
-	[SerializeField] TMP_Text FinalScoreText;
-	[SerializeField] TMP_Text PerfectText;
-	[SerializeField] TMP_Text GoodText;
-	[SerializeField] TMP_Text MissText;
-	[SerializeField] TMP_Text BestComboText;
 
 
 	InputSystem_Actions inputs;
@@ -105,53 +99,59 @@ public class ClickOnNote : MonoBehaviour
 	void Click(int columnIndex)
 	{
 		Transform column = levelLauncher.columns[columnIndex];
-		Transform firstNote = column.GetChild(0);
+		if(column.childCount > 0){
+			Transform firstNote = column.GetChild(0);
 
-		ParticleSystem particleSystem = particleSystems[columnIndex];
-		ParticleSystem.MainModule main = particleSystem.main;
+			ParticleSystem particleSystem = particleSystems[columnIndex];
+			ParticleSystem.MainModule main = particleSystem.main;
 
-        int scoreCalc ;
+			int scoreCalc ;
 
-		scoreCalc = CheckDistance(firstNote);
+			scoreCalc = CheckDistance(firstNote);
 
-		if (firstNote.childCount > 0)
-		{
-			if (scoreCalc >= 0){
-				main.loop = true;
-			}
-
-			void Callback(InputAction.CallbackContext context)
+			if (firstNote == null)
 			{
-				Transform endNote = firstNote.GetChild(0);
-
-				scoreCalc = CheckDistance(endNote);
+				Debug.Log("Coucou");
+			}
+			if (firstNote.childCount > 0)
+			{
 				if (scoreCalc >= 0){
+					main.loop = true;
+				}
+
+				void Callback(InputAction.CallbackContext context)
+				{
+					Transform endNote = firstNote.GetChild(0);
+
+					scoreCalc = CheckDistance(endNote);
+					if (scoreCalc >= 0){
+						levelLauncher.notes.Remove(firstNote);
+						Destroy(firstNote.gameObject);
+
+					}
+						particleSystem.Stop();
+
+						inputActions[columnIndex].canceled -= canceledCallbacks[columnIndex];
+				}
+
+				canceledCallbacks[columnIndex] = Callback;
+				inputActions[columnIndex].canceled += Callback;
+			}
+			else
+			{
+				if (scoreCalc >= 0){
+					main.loop = false;
 					levelLauncher.notes.Remove(firstNote);
 					Destroy(firstNote.gameObject);
-
 				}
-					particleSystem.Stop();
-
-					inputActions[columnIndex].canceled -= canceledCallbacks[columnIndex];
 			}
-
-			canceledCallbacks[columnIndex] = Callback;
-			inputActions[columnIndex].canceled += Callback;
-		}
-		else
-		{
-			if (scoreCalc >= 0){
-				main.loop = false;
-				levelLauncher.notes.Remove(firstNote);
-				Destroy(firstNote.gameObject);
+			NoteData noteData = firstNote.GetComponent<NoteData>();
+			if (scoreCalc >= 0)
+			{
+				IsFake(noteData, scoreCalc * 100);
+				particleSystem.Play();
 			}
 		}
-        NoteData noteData = firstNote.GetComponent<NoteData>();
-        if (scoreCalc >= 0)
-        {
-            IsFake(noteData, scoreCalc * 100);
-            particleSystem.Play();
-        }
 	}
 
 	private void Update()
@@ -166,11 +166,12 @@ public class ClickOnNote : MonoBehaviour
         DestroyNotes(5);
 		if (levelLauncher.notes.Count == 0)
         {
-        	EndMenu();
+        	endMenu.DisplayEndMenu(combo, bestCombo, score, perfect, good, miss);
         }
 		
 		
 	}
+	
 
     public void IsFake(NoteData noteData, int rank)
     {
@@ -195,6 +196,11 @@ public class ClickOnNote : MonoBehaviour
                 if (dotEnd < 0)
                 {
 					miss +=1;
+					if (combo > bestCombo)
+					{
+						bestCombo = combo;
+					}
+					combo = 0;
                     levelLauncher.notes.Remove(note);
                     Destroy(note.gameObject);
                 }
@@ -204,37 +210,15 @@ public class ClickOnNote : MonoBehaviour
                 if (dot < 0){
 
 					miss +=1;
+					if (combo > bestCombo)
+					{
+						bestCombo = combo;
+					}
+					combo = 0;
                     levelLauncher.notes.Remove(note);
                     Destroy(note.gameObject);
                 }
             }
         }
-    }
-
-	public void EndMenu ()
-    {
-		if(combo > bestCombo)
-        {
-            bestCombo = combo;
-        }
-
-		FinalScoreText.text = "Score: " + score;
-		PerfectText.text = "Perfect: " + perfect;
-		GoodText.text = "Good: " + good;
-		MissText.text = "Miss: " + miss;
-		BestComboText.text = "Best Combo: " + bestCombo;
-        container.SetActive(true);
-		Time.timeScale = 0f;
-    }
-
-	public void RetryButton()
-    {
-        string currentSceneName = SceneManager.GetActiveScene().name;
-		SceneManager.LoadScene(currentSceneName);
-    }
-
-	public void MainMenuButton()
-    {
-        SceneManager.LoadScene("MainMenu");
     }
 }
