@@ -124,7 +124,7 @@ public class ClickOnNote : MonoBehaviour
 
 	private void Update()
 	{
-		ScoreText.text = "Score: " + score;
+		// ScoreText.text = "Score: " + score;
         DestroyNotes(0);
         DestroyNotes(1);
         DestroyNotes(2);
@@ -160,7 +160,7 @@ public class ClickOnNote : MonoBehaviour
     {
         foreach (Transform note in levelLauncher.columns[columnIndex])
         {
-            Debug.Log(Vector3.Dot((note.position - validationBar.position).normalized, validationBar.forward));
+            // Debug.Log(Vector3.Dot((note.position - validationBar.position).normalized, validationBar.forward));
             if (note.childCount > 0)
             {
                 Transform endNote = note.GetChild(0);

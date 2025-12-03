@@ -977,6 +977,7 @@ Transform:
   - {fileID: 940242628}
   - {fileID: 2080258034}
   - {fileID: 1627767214}
+  - {fileID: 370535251}
   m_Father: {fileID: 747115071}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!120 &282326812
@@ -1104,6 +1105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca653f43f9ab9804cb4671e2c7d3cfaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClickOnNote
+  ScoreText: {fileID: 0}
+  container: {fileID: 0}
   levelLauncher: {fileID: 1735601570}
   particleSystems:
   - {fileID: 1638586150}
@@ -1112,6 +1115,7 @@ MonoBehaviour:
   - {fileID: 940242630}
   - {fileID: 2080258036}
   - {fileID: 1627767216}
+  validationBar: {fileID: 370535251}
 --- !u!1 &287405704
 GameObject:
   m_ObjectHideFlags: 0
@@ -6072,6 +6076,37 @@ Transform:
   - {fileID: 641244787}
   - {fileID: 1257167117}
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &370535250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 370535251}
+  m_Layer: 0
+  m_Name: TriggerChecker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &370535251
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370535250}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.32, y: 0, z: -0.8499999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 282326811}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &374850712
 GameObject:
@@ -28538,7 +28573,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelLauncher
   tapNote: {fileID: 5531050612506118611, guid: 931932c119232a945b3b7c65ae40c6c2, type: 3}
   noteTrail: {fileID: 7110167397845504375, guid: 8af95bc19656f2a4e85d5dd45b141679, type: 3}
-  level: {fileID: 11400000, guid: cb87d5a274a45fe458fd9276f5e5d83e, type: 2}
   columns: []
   notes: []
 --- !u!82 &1735601571
