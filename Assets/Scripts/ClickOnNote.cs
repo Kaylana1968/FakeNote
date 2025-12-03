@@ -124,7 +124,7 @@ public class ClickOnNote : MonoBehaviour
 
 	private void Update()
 	{
-		ScoreText.text = "Score: " + score;
+		// ScoreText.text = "Score: " + score;
         DestroyNotes(0);
         DestroyNotes(1);
         DestroyNotes(2);

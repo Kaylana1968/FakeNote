@@ -8,7 +8,7 @@ public class LevelLauncher : MonoBehaviour
 	[SerializeField] GameObject noteTrail;
 
 	AudioSource audioSource;
-	public Level level;
+	private Level level;
 	public List<Transform> columns = new();
 	public List<Transform> notes = new();
 
@@ -32,6 +32,8 @@ public class LevelLauncher : MonoBehaviour
 	{
 		audioSource = GetComponent<AudioSource>();
 
+		level = LevelSelection.SelectedLevel;
+		
 		if (level != null && level.audio != null)
 		{
 			musicStartDSPTime = AudioSettings.dspTime + startPauseTime;
