@@ -160,7 +160,7 @@ public class ClickOnNote : MonoBehaviour
     {
         foreach (Transform note in levelLauncher.columns[columnIndex])
         {
-            // Debug.Log(Vector3.Dot((note.position - validationBar.position).normalized, validationBar.forward));
+            Debug.Log(Vector3.Dot((note.position - validationBar.position).normalized, validationBar.forward));
             if (note.childCount > 0)
             {
                 Transform endNote = note.GetChild(0);
