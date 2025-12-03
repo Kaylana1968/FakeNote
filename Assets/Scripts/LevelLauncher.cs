@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class LevelLauncher : MonoBehaviour
 {
 	[SerializeField] GameObject tapNote;
@@ -61,7 +62,7 @@ public class LevelLauncher : MonoBehaviour
 				data.isFake = note.isFake;
 
 				Color color = colors[note.column];
-				newNote.GetComponent<SpriteRenderer>().color = color;
+				newNote.GetComponent<SpriteRenderer>().color = data.isFake ? Color.red : color;
 
 				if (note.type == NoteType.hold)
 				{

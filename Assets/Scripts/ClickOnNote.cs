@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
+using NUnit.Framework;
 
 public class ClickOnNote : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class ClickOnNote : MonoBehaviour
 	[SerializeField] GameObject container;
 	[SerializeField] LevelLauncher levelLauncher;
 	[SerializeField] ParticleSystem[] particleSystems;
+    [SerializeField] Transform validationBar;
 
 	InputSystem_Actions inputs;
 	List<InputAction> inputActions;
@@ -42,26 +44,30 @@ public class ClickOnNote : MonoBehaviour
 		canceledCallbacks = new List<Action<InputAction.CallbackContext>>(new Action<InputAction.CallbackContext>[inputActions.Count]);
 	}
 
-	void CheckDistance(Transform note)
+	int CheckDistance(Transform note)
 	{
+       
 		float distance = Mathf.Abs(note.position.z - transform.position.z);
 
-		if (distance < 0.3)
-		{
-			Debug.Log("Perfect");
-			score += 300;
-		}
-		else if (distance < 0.6)
-		{
-			Debug.Log("Good");
-			score += 100;
-		}
-		else
-		{
-			Debug.Log("Miss");
-			// container.SetActive(true);
-			// Time.timeScale = 0f;
-		}
+        if (distance >= 0.75)
+        {
+            return -1;
+        }
+        else if (distance < 0.3)
+        {
+            return 3;
+        }
+        else if (distance < 0.6)
+        {
+            return 1;
+        }
+        else
+        {
+            return 0;
+            // container.SetActive(true);
+            // Time.timeScale = 0f;
+        }
+            
 	}
 
 	void Click(int columnIndex)
@@ -69,30 +75,32 @@ public class ClickOnNote : MonoBehaviour
 		Transform column = levelLauncher.columns[columnIndex];
 		Transform firstNote = column.GetChild(0);
 
-		NoteData noteData = firstNote.GetComponent<NoteData>();
-		Debug.Log(noteData.isFake);
-
 		ParticleSystem particleSystem = particleSystems[columnIndex];
 		ParticleSystem.MainModule main = particleSystem.main;
 
-		CheckDistance(firstNote);
+        int scoreCalc ;
+
+		scoreCalc = CheckDistance(firstNote);
 
 		if (firstNote.childCount > 0)
 		{
-			main.loop = true;
+			if (scoreCalc >= 0){
+				main.loop = true;
+			}
 
 			void Callback(InputAction.CallbackContext context)
 			{
 				Transform endNote = firstNote.GetChild(0);
 
-				CheckDistance(endNote);
+				scoreCalc = CheckDistance(endNote);
+				if (scoreCalc >= 0){
+					levelLauncher.notes.Remove(firstNote);
+					Destroy(firstNote.gameObject);
 
-				levelLauncher.notes.Remove(firstNote);
-				Destroy(firstNote.gameObject);
+				}
+					particleSystem.Stop();
 
-				particleSystem.Stop();
-
-				inputActions[columnIndex].canceled -= canceledCallbacks[columnIndex];
+					inputActions[columnIndex].canceled -= canceledCallbacks[columnIndex];
 			}
 
 			canceledCallbacks[columnIndex] = Callback;
@@ -100,17 +108,30 @@ public class ClickOnNote : MonoBehaviour
 		}
 		else
 		{
-			main.loop = false;
-
-			levelLauncher.notes.Remove(firstNote);
-			Destroy(firstNote.gameObject);
+			if (scoreCalc >= 0){
+				main.loop = false;
+				levelLauncher.notes.Remove(firstNote);
+				Destroy(firstNote.gameObject);
+			}
 		}
-		particleSystem.Play();
+        NoteData noteData = firstNote.GetComponent<NoteData>();
+        if (scoreCalc >= 0)
+        {
+            IsFake(noteData, scoreCalc * 100);
+            particleSystem.Play();
+        }
 	}
 
 	private void Update()
 	{
 		ScoreText.text = "Score: " + score;
+        DestroyNotes(0);
+        DestroyNotes(1);
+        DestroyNotes(2);
+        DestroyNotes(3);
+        DestroyNotes(4);
+        DestroyNotes(5);
+        
 	}
 
 	public void RetryButton()
@@ -120,4 +141,43 @@ public class ClickOnNote : MonoBehaviour
 		Debug.Log(currentSceneName);
 
 	}
+
+    public void IsFake(NoteData noteData, int rank)
+    {
+        if (noteData.isFake)
+        {
+            score -= 500;
+            if (score < 0) score = 0;
+            Debug.Log("Fake Note! -500");
+        }else
+        {
+            Debug.Log("Real Note!");
+            score += rank;
+        }
+    }
+
+    void DestroyNotes(int columnIndex)
+    {
+        foreach (Transform note in levelLauncher.columns[columnIndex])
+        {
+            Debug.Log(Vector3.Dot((note.position - validationBar.position).normalized, validationBar.forward));
+            if (note.childCount > 0)
+            {
+                Transform endNote = note.GetChild(0);
+                float dotEnd = Vector3.Dot((endNote.position - validationBar.position).normalized, validationBar.forward);
+                if (dotEnd < 0)
+                {
+                    levelLauncher.notes.Remove(note);
+                    Destroy(note.gameObject);
+                }
+            }else
+            {
+                float dot = Vector3.Dot((note.position - validationBar.position).normalized, validationBar.forward);
+                if (dot < 0){
+                    levelLauncher.notes.Remove(note);
+                    Destroy(note.gameObject);
+                }
+            }
+        }
+    }
 }
