@@ -29,6 +29,7 @@ public class LevelLauncher : MonoBehaviour
 
 	void Start()
 	{
+    Time.timeScale = 1f;
 		audioSource = GetComponent<AudioSource>();
 
 		if (level != null && level.audio != null)
