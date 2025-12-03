@@ -10,15 +10,27 @@ using NUnit.Framework;
 public class ClickOnNote : MonoBehaviour
 {
 	[SerializeField] TMP_Text ScoreText;
+	[SerializeField] TMP_Text ComboText;
 	[SerializeField] GameObject container;
 	[SerializeField] LevelLauncher levelLauncher;
 	[SerializeField] ParticleSystem[] particleSystems;
     [SerializeField] Transform validationBar;
+	[SerializeField] TMP_Text FinalScoreText;
+	[SerializeField] TMP_Text PerfectText;
+	[SerializeField] TMP_Text GoodText;
+	[SerializeField] TMP_Text MissText;
+	[SerializeField] TMP_Text BestComboText;
+
 
 	InputSystem_Actions inputs;
 	List<InputAction> inputActions;
 	List<Action<InputAction.CallbackContext>> canceledCallbacks;
 	int score;
+	int perfect;
+	int good;
+	int miss;
+	int combo;
+	int bestCombo;
 
 	void Awake()
 	{
@@ -51,18 +63,38 @@ public class ClickOnNote : MonoBehaviour
 
         if (distance >= 0.75)
         {
+			miss +=1;
+			if (combo > bestCombo)
+            {
+                bestCombo = combo;
+            }
+			combo = 0;
             return -1;
         }
         else if (distance < 0.3)
         {
+			perfect += 1;
+			combo +=1 ;
             return 3;
         }
         else if (distance < 0.6)
         {
+			good +=1;
+			if (combo > bestCombo)
+            {
+                bestCombo = combo;
+            }
+			combo = 0;
             return 1;
         }
         else
         {
+			miss +=1;
+			if (combo > bestCombo)
+            {
+                bestCombo = combo;
+            }
+			combo = 0;
             return 0;
             // container.SetActive(true);
             // Time.timeScale = 0f;
@@ -125,21 +157,19 @@ public class ClickOnNote : MonoBehaviour
 	private void Update()
 	{
 		ScoreText.text = "Score: " + score;
+		ComboText.text = "Combo: " + combo;
         DestroyNotes(0);
         DestroyNotes(1);
         DestroyNotes(2);
         DestroyNotes(3);
         DestroyNotes(4);
         DestroyNotes(5);
-        
-	}
-
-	public void RetryButton()
-	{
-		string currentSceneName = SceneManager.GetActiveScene().name;
-		SceneManager.LoadScene(currentSceneName);
-		Debug.Log(currentSceneName);
-
+		if (levelLauncher.notes.Count == 0)
+        {
+        	EndMenu();
+        }
+		
+		
 	}
 
     public void IsFake(NoteData noteData, int rank)
@@ -148,10 +178,8 @@ public class ClickOnNote : MonoBehaviour
         {
             score -= 500;
             if (score < 0) score = 0;
-            Debug.Log("Fake Note! -500");
         }else
         {
-            Debug.Log("Real Note!");
             score += rank;
         }
     }
@@ -160,13 +188,13 @@ public class ClickOnNote : MonoBehaviour
     {
         foreach (Transform note in levelLauncher.columns[columnIndex])
         {
-            Debug.Log(Vector3.Dot((note.position - validationBar.position).normalized, validationBar.forward));
             if (note.childCount > 0)
             {
                 Transform endNote = note.GetChild(0);
                 float dotEnd = Vector3.Dot((endNote.position - validationBar.position).normalized, validationBar.forward);
                 if (dotEnd < 0)
                 {
+					miss +=1;
                     levelLauncher.notes.Remove(note);
                     Destroy(note.gameObject);
                 }
@@ -174,10 +202,39 @@ public class ClickOnNote : MonoBehaviour
             {
                 float dot = Vector3.Dot((note.position - validationBar.position).normalized, validationBar.forward);
                 if (dot < 0){
+
+					miss +=1;
                     levelLauncher.notes.Remove(note);
                     Destroy(note.gameObject);
                 }
             }
         }
+    }
+
+	public void EndMenu ()
+    {
+		if(combo > bestCombo)
+        {
+            bestCombo = combo;
+        }
+
+		FinalScoreText.text = "Score: " + score;
+		PerfectText.text = "Perfect: " + perfect;
+		GoodText.text = "Good: " + good;
+		MissText.text = "Miss: " + miss;
+		BestComboText.text = "Best Combo: " + bestCombo;
+        container.SetActive(true);
+		Time.timeScale = 0f;
+    }
+
+	public void RetryButton()
+    {
+        string currentSceneName = SceneManager.GetActiveScene().name;
+		SceneManager.LoadScene(currentSceneName);
+    }
+
+	public void MainMenuButton()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }
