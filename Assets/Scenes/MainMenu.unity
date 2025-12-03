@@ -388,7 +388,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 0, y: -0.018650033}
+=======
+  m_AnchoredPosition: {x: 0, y: -0.018402545}
+>>>>>>> origin/end-menu
   m_SizeDelta: {x: 1, y: -0.018981934}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &75907636
@@ -755,6 +759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88eebceda9a702145b5a058a1410180e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelMenu
+<<<<<<< HEAD
   levelList:
   - levelName: Test
     levelDescription: TEST TEST TEST
@@ -764,6 +769,9 @@ MonoBehaviour:
     levelDescription: CHIBRE CHIBRE CHIBRE
     levelDificulty: 4
     level: {fileID: 11400000, guid: be51f4eecd6da9d41a83e6904cdc7fd6, type: 2}
+=======
+  sceneNames: []
+>>>>>>> origin/end-menu
   container: {fileID: 75907635}
   blockPrefab: {fileID: 173960967127053068, guid: 3e0a1685bba9a7643a8c0b9b1ccb99d1, type: 3}
 --- !u!1 &1290055445

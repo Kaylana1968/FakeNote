@@ -1,26 +1,32 @@
 using System;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using NUnit.Framework;
+using System.Collections;
 
 public class ClickOnNote : MonoBehaviour
 {
 	[SerializeField] TMP_Text ScoreText;
-	[SerializeField] GameObject container;
+	[SerializeField] TMP_Text ComboText;
 	[SerializeField] LevelLauncher levelLauncher;
+	[SerializeField] EndMenu endMenu;
 	[SerializeField] ParticleSystem[] particleSystems;
     [SerializeField] Transform validationBar;
+
 
 	InputSystem_Actions inputs;
 	List<InputAction> inputActions;
 	List<Action<InputAction.CallbackContext>> canceledCallbacks;
-	int score;
-
-	void Awake()
+    int score;
+	int perfect;
+	int good;
+	int miss;
+	int combo;
+	int bestCombo;
+    void Awake()
 	{
 		inputs = new();
 		inputs.Enable();
@@ -42,7 +48,7 @@ public class ClickOnNote : MonoBehaviour
 		}
 
 		canceledCallbacks = new List<Action<InputAction.CallbackContext>>(new Action<InputAction.CallbackContext>[inputActions.Count]);
-	}
+    }
 
 	int CheckDistance(Transform note)
 	{
@@ -51,18 +57,38 @@ public class ClickOnNote : MonoBehaviour
 
         if (distance >= 0.75)
         {
+			miss +=1;
+			if (combo > bestCombo)
+            {
+                bestCombo = combo;
+            }
+			combo = 0;
             return -1;
         }
         else if (distance < 0.3)
         {
+			perfect += 1;
+			combo +=1 ;
             return 3;
         }
         else if (distance < 0.6)
         {
+			good +=1;
+			if (combo > bestCombo)
+            {
+                bestCombo = combo;
+            }
+			combo = 0;
             return 1;
         }
         else
         {
+			miss +=1;
+			if (combo > bestCombo)
+            {
+                bestCombo = combo;
+            }
+			combo = 0;
             return 0;
             // container.SetActive(true);
             // Time.timeScale = 0f;
@@ -73,74 +99,79 @@ public class ClickOnNote : MonoBehaviour
 	void Click(int columnIndex)
 	{
 		Transform column = levelLauncher.columns[columnIndex];
-		Transform firstNote = column.GetChild(0);
+		if(column.childCount > 0){
+			Transform firstNote = column.GetChild(0);
 
-		ParticleSystem particleSystem = particleSystems[columnIndex];
-		ParticleSystem.MainModule main = particleSystem.main;
+			ParticleSystem particleSystem = particleSystems[columnIndex];
+			ParticleSystem.MainModule main = particleSystem.main;
 
-        int scoreCalc ;
+			int scoreCalc ;
 
-		scoreCalc = CheckDistance(firstNote);
+			scoreCalc = CheckDistance(firstNote);
 
-		if (firstNote.childCount > 0)
-		{
-			if (scoreCalc >= 0){
-				main.loop = true;
-			}
-
-			void Callback(InputAction.CallbackContext context)
+			if (firstNote == null)
 			{
-				Transform endNote = firstNote.GetChild(0);
-
-				scoreCalc = CheckDistance(endNote);
+				Debug.Log("Coucou");
+			}
+			if (firstNote.childCount > 0)
+			{
 				if (scoreCalc >= 0){
+					main.loop = true;
+				}
+
+				void Callback(InputAction.CallbackContext context)
+				{
+					Transform endNote = firstNote.GetChild(0);
+
+					scoreCalc = CheckDistance(endNote);
+					if (scoreCalc >= 0){
+						levelLauncher.notes.Remove(firstNote);
+						Destroy(firstNote.gameObject);
+
+					}
+						particleSystem.Stop();
+
+						inputActions[columnIndex].canceled -= canceledCallbacks[columnIndex];
+				}
+
+				canceledCallbacks[columnIndex] = Callback;
+				inputActions[columnIndex].canceled += Callback;
+			}
+			else
+			{
+				if (scoreCalc >= 0){
+					main.loop = false;
 					levelLauncher.notes.Remove(firstNote);
 					Destroy(firstNote.gameObject);
-
 				}
-					particleSystem.Stop();
-
-					inputActions[columnIndex].canceled -= canceledCallbacks[columnIndex];
 			}
-
-			canceledCallbacks[columnIndex] = Callback;
-			inputActions[columnIndex].canceled += Callback;
-		}
-		else
-		{
-			if (scoreCalc >= 0){
-				main.loop = false;
-				levelLauncher.notes.Remove(firstNote);
-				Destroy(firstNote.gameObject);
+			NoteData noteData = firstNote.GetComponent<NoteData>();
+			if (scoreCalc >= 0)
+			{
+				IsFake(noteData, scoreCalc * 100);
+				particleSystem.Play();
 			}
 		}
-        NoteData noteData = firstNote.GetComponent<NoteData>();
-        if (scoreCalc >= 0)
-        {
-            IsFake(noteData, scoreCalc * 100);
-            particleSystem.Play();
-        }
 	}
 
 	private void Update()
 	{
-		// ScoreText.text = "Score: " + score;
+		ScoreText.text = "Score: " + score;
+		ComboText.text = "Combo: " + combo;
         DestroyNotes(0);
         DestroyNotes(1);
         DestroyNotes(2);
         DestroyNotes(3);
         DestroyNotes(4);
         DestroyNotes(5);
-        
-	}
+		if (levelLauncher.notes.Count == 0)
+        {
+            ShowEndMenuWithDelay(2f, combo, bestCombo, score, perfect, good, miss);
+        }
 
-	public void RetryButton()
-	{
-		string currentSceneName = SceneManager.GetActiveScene().name;
-		SceneManager.LoadScene(currentSceneName);
-		Debug.Log(currentSceneName);
 
-	}
+    }
+	
 
     public void IsFake(NoteData noteData, int rank)
     {
@@ -148,10 +179,8 @@ public class ClickOnNote : MonoBehaviour
         {
             score -= 500;
             if (score < 0) score = 0;
-            Debug.Log("Fake Note! -500");
         }else
         {
-            Debug.Log("Real Note!");
             score += rank;
         }
     }
@@ -160,13 +189,18 @@ public class ClickOnNote : MonoBehaviour
     {
         foreach (Transform note in levelLauncher.columns[columnIndex])
         {
-            Debug.Log(Vector3.Dot((note.position - validationBar.position).normalized, validationBar.forward));
             if (note.childCount > 0)
             {
                 Transform endNote = note.GetChild(0);
                 float dotEnd = Vector3.Dot((endNote.position - validationBar.position).normalized, validationBar.forward);
                 if (dotEnd < 0)
                 {
+					miss +=1;
+					if (combo > bestCombo)
+					{
+						bestCombo = combo;
+					}
+					combo = 0;
                     levelLauncher.notes.Remove(note);
                     Destroy(note.gameObject);
                 }
@@ -174,10 +208,52 @@ public class ClickOnNote : MonoBehaviour
             {
                 float dot = Vector3.Dot((note.position - validationBar.position).normalized, validationBar.forward);
                 if (dot < 0){
+
+					miss +=1;
+					if (combo > bestCombo)
+					{
+						bestCombo = combo;
+					}
+					combo = 0;
                     levelLauncher.notes.Remove(note);
                     Destroy(note.gameObject);
                 }
             }
         }
     }
+    public void ShowEndMenuWithDelay(float delay, int combo, int bestCombo, int score, int perfect, int good, int miss)
+    {
+        StartCoroutine(DelayEndMenu(delay, combo, bestCombo, score, perfect, good, miss));
+    }
+
+    private IEnumerator DelayEndMenu(
+        float delay,
+        int combo,
+        int bestCombo,
+        int score,
+        int perfect,
+        int good,
+        int miss)
+    {
+        yield return new WaitForSeconds(delay);
+
+        endMenu.DisplayEndMenu(combo, bestCombo, score, perfect, good, miss);
+    }
+
+    private void OnDestroy()
+    {
+        if (inputs != null)
+            inputs.Disable();
+
+        if (inputActions != null)
+        {
+            for (int i = 0; i < inputActions.Count; i++)
+            {
+                if (canceledCallbacks[i] != null)
+                    inputActions[i].canceled -= canceledCallbacks[i];
+            }
+        }
+    }
+
+
 }
