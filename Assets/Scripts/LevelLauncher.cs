@@ -11,7 +11,7 @@ public class LevelLauncher : MonoBehaviour
 	public List<Transform> columns = new();
 	public List<Transform> notes = new();
 
-	readonly float musicStartAt = 45f;
+	readonly float musicStartAt = 0f;
 	readonly float startPauseTime = 3f;
 	readonly float speed = 5f;
 	readonly List<Color> colors = new()
@@ -58,8 +58,7 @@ public class LevelLauncher : MonoBehaviour
 
 				NoteData data = newNote.AddComponent<NoteData>();
 				data.time = noteRow.time;
-				data.isHold = note.type == NoteType.hold;
-				data.endTime = note.endTime;
+				data.isFake = note.isFake;
 
 				Color color = colors[note.column];
 				newNote.GetComponent<SpriteRenderer>().color = color;

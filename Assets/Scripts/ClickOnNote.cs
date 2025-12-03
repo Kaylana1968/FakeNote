@@ -8,15 +8,15 @@ using UnityEngine.InputSystem;
 
 public class ClickOnNote : MonoBehaviour
 {
-  public TMP_Text ScoreText;
-  public int score;
+	[SerializeField] TMP_Text ScoreText;
+	[SerializeField] GameObject container;
 	[SerializeField] LevelLauncher levelLauncher;
-  [SerializeField] ParticleSystem[] particleSystems;
-  public GameObject container;
+	[SerializeField] ParticleSystem[] particleSystems;
 
 	InputSystem_Actions inputs;
 	List<InputAction> inputActions;
 	List<Action<InputAction.CallbackContext>> canceledCallbacks;
+	int score;
 
 	void Awake()
 	{
@@ -43,27 +43,34 @@ public class ClickOnNote : MonoBehaviour
 	}
 
 	void CheckDistance(Transform note)
-  {
+	{
 		float distance = Mathf.Abs(note.position.z - transform.position.z);
 
 		if (distance < 0.3)
 		{
 			Debug.Log("Perfect");
+			score += 300;
 		}
 		else if (distance < 0.6)
 		{
 			Debug.Log("Good");
+			score += 100;
 		}
 		else
 		{
 			Debug.Log("Miss");
+			// container.SetActive(true);
+			// Time.timeScale = 0f;
 		}
-  }
+	}
 
 	void Click(int columnIndex)
 	{
 		Transform column = levelLauncher.columns[columnIndex];
 		Transform firstNote = column.GetChild(0);
+
+		NoteData noteData = firstNote.GetComponent<NoteData>();
+		Debug.Log(noteData.isFake);
 
 		ParticleSystem particleSystem = particleSystems[columnIndex];
 		ParticleSystem.MainModule main = particleSystem.main;
@@ -84,7 +91,7 @@ public class ClickOnNote : MonoBehaviour
 				Destroy(firstNote.gameObject);
 
 				particleSystem.Stop();
-				
+
 				inputActions[columnIndex].canceled -= canceledCallbacks[columnIndex];
 			}
 
@@ -95,47 +102,22 @@ public class ClickOnNote : MonoBehaviour
 		{
 			main.loop = false;
 
-    private void Update()
-    {
-        ScoreText.text = "Score: " + score;
-    }
-    private void Click(int columnIndex)
-    {
-        Transform column = levelLauncher.columns[columnIndex];
-        Transform firstNote = column.GetChild(0);
+			levelLauncher.notes.Remove(firstNote);
+			Destroy(firstNote.gameObject);
+		}
+		particleSystem.Play();
+	}
 
-        float distance = Mathf.Abs(firstNote.position.z - transform.position.z);
+	private void Update()
+	{
+		ScoreText.text = "Score: " + score;
+	}
 
-        particleSystems[columnIndex].Play();
+	public void RetryButton()
+	{
+		string currentSceneName = SceneManager.GetActiveScene().name;
+		SceneManager.LoadScene(currentSceneName);
+		Debug.Log(currentSceneName);
 
-        if (distance < 0.3)
-        {
-            Debug.Log("Perfect");
-            score += 300;
-        }
-        else if (distance < 0.6)
-        {
-            Debug.Log("Good");
-            score += 100;
-        }
-        else
-        {
-            Debug.Log("Miss");
-            container.SetActive(true);
-            Time.timeScale = 0f;
-            
-        }
-
-        levelLauncher.notes.Remove(firstNote);
-        Destroy(firstNote.gameObject);
-        particleSystem.Play();
-    }
-
-    public void RetryButton() 
-    {
-        string currentSceneName = SceneManager.GetActiveScene().name;
-        SceneManager.LoadScene(currentSceneName);
-        Debug.Log(currentSceneName);
-
-    }
+	}
 }
