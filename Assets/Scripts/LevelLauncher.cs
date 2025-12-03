@@ -11,6 +11,7 @@ public class LevelLauncher : MonoBehaviour
 	public List<Transform> columns = new();
 	public List<Transform> notes = new();
 
+	readonly float musicStartAt = 15f;
 	readonly float startPauseTime = 3f;
 	readonly float speed = 5f;
 	readonly List<Color> colors = new()
@@ -35,6 +36,7 @@ public class LevelLauncher : MonoBehaviour
 			musicStartDSPTime = AudioSettings.dspTime + startPauseTime;
 
 			audioSource.clip = level.audio;
+			audioSource.time = musicStartAt;
 			audioSource.PlayScheduled(musicStartDSPTime);
 		}
 
@@ -85,7 +87,7 @@ public class LevelLauncher : MonoBehaviour
 
 	void Update()
 	{
-		double musicTime = AudioSettings.dspTime - musicStartDSPTime;
+		double musicTime = AudioSettings.dspTime - musicStartDSPTime + musicStartAt;
 
 		foreach (Transform note in notes)
 		{
