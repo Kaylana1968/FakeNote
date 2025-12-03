@@ -1,0 +1,226 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0830c87f3e695b2458ad0419b27839fe, type: 3}
+  m_Name: Tetoris
+  m_EditorClassIdentifier: Assembly-CSharp::Level
+  audio: {fileID: 8300000, guid: 1757aaba1f0ae314d818381ec292c4c9, type: 3}
+  noteRows:
+  - time: 1.48
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 1.66
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 1.8
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 1.9
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 2
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 2.16 # shi
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 2.34
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 2.36
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 2.51
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 2.69 # no
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 2.88
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 3.06
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 3.2
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 3.3
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 3.4
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 3.56
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 3.74
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 3.76
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 3.91
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 4.09
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 4.28
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 4.46
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 4.6
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 4.7
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 4.8
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 4.96
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 5.14
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 5.16
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 5.31
+    notes:
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 5.49
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 6.04
+    notes:
+    - column: 1
+      type: 1
+      isFake: 0
+      endTime: 6.94
+  - time: 6.22
+    notes:
+    - column: 2
+      type: 1
+      isFake: 0
+      endTime: 6.94
+  - time: 6.4
+    notes:
+    - column: 3
+      type: 1
+      isFake: 0
+      endTime: 6.94
+  - time: 6.58
+    notes:
+    - column: 4
+      type: 1
+      isFake: 0
+      endTime: 6.94
+  - time: 6.76
+    notes:
+    - column: 0
+      type: 1
+      isFake: 0
+      endTime: 6.94
