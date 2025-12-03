@@ -25,7 +25,8 @@ public class LevelLauncher : MonoBehaviour
 
   void Start()
   {
-    foreach (Transform child in transform)
+        Time.timeScale = 1f;
+        foreach (Transform child in transform)
     {
       columns.Add(child);
     }

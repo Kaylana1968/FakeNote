@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ClickOnNote : MonoBehaviour
 {
 	[SerializeField] LevelLauncher levelLauncher;
     [SerializeField] ParticleSystem[] particleSystems;
+    public GameObject container;
 
 	private InputSystem_Actions inputs;
 
@@ -64,11 +66,20 @@ public class ClickOnNote : MonoBehaviour
         else
         {
             Debug.Log("Miss");
+            container.SetActive(true);
             Time.timeScale = 0f;
             
         }
 
         levelLauncher.notes.Remove(firstNote);
         Destroy(firstNote.gameObject);
+    }
+
+    public void RetryButton() 
+    {
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(currentSceneName);
+        Debug.Log(currentSceneName);
+
     }
 }
