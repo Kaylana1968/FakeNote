@@ -31,6 +31,7 @@ public class EndMenu: MonoBehaviour
 
 	public void RetryButton()
     {
+        Time.timeScale = 1f;
         string currentSceneName = SceneManager.GetActiveScene().name;
 		SceneManager.LoadScene(currentSceneName);
     }

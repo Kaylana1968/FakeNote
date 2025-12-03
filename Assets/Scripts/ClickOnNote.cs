@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using NUnit.Framework;
+using System.Collections;
 
 public class ClickOnNote : MonoBehaviour
 {
@@ -19,14 +20,13 @@ public class ClickOnNote : MonoBehaviour
 	InputSystem_Actions inputs;
 	List<InputAction> inputActions;
 	List<Action<InputAction.CallbackContext>> canceledCallbacks;
-	int score;
+    int score;
 	int perfect;
 	int good;
 	int miss;
 	int combo;
 	int bestCombo;
-
-	void Awake()
+    void Awake()
 	{
 		inputs = new();
 		inputs.Enable();
@@ -48,7 +48,7 @@ public class ClickOnNote : MonoBehaviour
 		}
 
 		canceledCallbacks = new List<Action<InputAction.CallbackContext>>(new Action<InputAction.CallbackContext>[inputActions.Count]);
-	}
+    }
 
 	int CheckDistance(Transform note)
 	{
@@ -166,11 +166,11 @@ public class ClickOnNote : MonoBehaviour
         DestroyNotes(5);
 		if (levelLauncher.notes.Count == 0)
         {
-        	endMenu.DisplayEndMenu(combo, bestCombo, score, perfect, good, miss);
+            ShowEndMenuWithDelay(2f, combo, bestCombo, score, perfect, good, miss);
         }
-		
-		
-	}
+
+
+    }
 	
 
     public void IsFake(NoteData noteData, int rank)
@@ -221,4 +221,39 @@ public class ClickOnNote : MonoBehaviour
             }
         }
     }
+    public void ShowEndMenuWithDelay(float delay, int combo, int bestCombo, int score, int perfect, int good, int miss)
+    {
+        StartCoroutine(DelayEndMenu(delay, combo, bestCombo, score, perfect, good, miss));
+    }
+
+    private IEnumerator DelayEndMenu(
+        float delay,
+        int combo,
+        int bestCombo,
+        int score,
+        int perfect,
+        int good,
+        int miss)
+    {
+        yield return new WaitForSeconds(delay);
+
+        endMenu.DisplayEndMenu(combo, bestCombo, score, perfect, good, miss);
+    }
+
+    private void OnDestroy()
+    {
+        if (inputs != null)
+            inputs.Disable();
+
+        if (inputActions != null)
+        {
+            for (int i = 0; i < inputActions.Count; i++)
+            {
+                if (canceledCallbacks[i] != null)
+                    inputActions[i].canceled -= canceledCallbacks[i];
+            }
+        }
+    }
+
+
 }
