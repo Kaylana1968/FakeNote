@@ -44,27 +44,27 @@ MonoBehaviour:
     notes:
     - column: 0
       type: 0
-      isFake: 0
+      isFake: 1
       endTime: 3
     - column: 1
       type: 0
-      isFake: 0
+      isFake: 1
       endTime: 0
     - column: 2
       type: 0
-      isFake: 0
+      isFake: 1
       endTime: 0
     - column: 3
       type: 0
-      isFake: 0
+      isFake: 1
       endTime: 0
     - column: 4
       type: 0
-      isFake: 0
+      isFake: 1
       endTime: 0
     - column: 5
       type: 0
-      isFake: 0
+      isFake: 1
       endTime: 0
   - time: 2
     notes:
