@@ -768,6 +768,10 @@ MonoBehaviour:
     levelDescription: Niveau de test magueule
     levelDificulty: 1
     level: {fileID: 11400000, guid: 8c08651dd4c32684e9d045bff80f098e, type: 2}
+  - levelName: NO BADITAO
+    levelDescription: BREZIL ou quoi ? feur
+    levelDificulty: 4
+    level: {fileID: 11400000, guid: 8dc0a280f0f03754aad270bd90bb5ce8, type: 2}
   container: {fileID: 75907635}
   blockPrefab: {fileID: 173960967127053068, guid: 3e0a1685bba9a7643a8c0b9b1ccb99d1, type: 3}
 --- !u!1 &1290055445
