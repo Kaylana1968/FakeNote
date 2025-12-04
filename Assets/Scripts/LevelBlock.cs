@@ -18,7 +18,12 @@ public class LevelBlock : MonoBehaviour
 
     public void PlayLevel()
     {
+        
         if (level != null) LevelSelection.SelectedLevel = level;
+        if (PersistentManager.Instance != null)
+        {
+            PersistentManager.Instance.DestroySelf(); 
+        }
         SceneManager.LoadScene("GameScene");
     }
 }
