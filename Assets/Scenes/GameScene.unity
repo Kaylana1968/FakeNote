@@ -32422,6 +32422,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1735601568}
   - component: {fileID: 1735601570}
+  - component: {fileID: 1735601572}
   - component: {fileID: 1735601571}
   m_Layer: 0
   m_Name: Notes
@@ -32565,6 +32566,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1735601572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735601567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30f449a3d8556f641a40f45683fd7e80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VolumeSetter
 --- !u!1 &1750140162
 GameObject:
   m_ObjectHideFlags: 0
