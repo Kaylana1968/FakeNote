@@ -40,6 +40,7 @@ public class PauseMenu : MonoBehaviour
 
     public void MainMenuButton()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
     }
     private IEnumerator FirstResumeAfterDelay()
@@ -56,17 +57,8 @@ public class PauseMenu : MonoBehaviour
         levelLauncher.ResumeMusic();
 
     }
-    private IEnumerator SecondResumeAfterDelay()
+    private IEnumerator WaitForReturn()
     {
         yield return new WaitForSecondsRealtime(1f);
-        number2.SetActive(false);
-        number1.SetActive(true);
-    }
-    private IEnumerator LastResumeAfterDelay()
-    {
-        yield return new WaitForSecondsRealtime(1f);
-        Time.timeScale = 1.0f;
-        number1.SetActive(false);
-        levelLauncher.ResumeMusic();
     }
 }
