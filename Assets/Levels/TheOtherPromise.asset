@@ -10,137 +10,89 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0830c87f3e695b2458ad0419b27839fe, type: 3}
-  m_Name: Level
+  m_Name: TheOtherPromise
   m_EditorClassIdentifier: Assembly-CSharp::Level
   audio: {fileID: 8300000, guid: 464c6261457ede644b89cc52b23b2923, type: 3}
   noteRows:
-  - time: 0
+  - time: 0.45
     notes:
-    - column: 0
-      type: 0
-      isFake: 0
-      endTime: 3
-    - column: 1
-      type: 0
-      isFake: 0
-      endTime: 0
-    - column: 2
-      type: 0
-      isFake: 0
-      endTime: 0
     - column: 3
-      type: 0
-      isFake: 0
-      endTime: 0
-    - column: 4
-      type: 0
-      isFake: 0
-      endTime: 0
-    - column: 5
       type: 0
       isFake: 0
       endTime: 0
   - time: 1
     notes:
-    - column: 0
-      type: 0
-      isFake: 1
-      endTime: 3
-    - column: 1
-      type: 0
-      isFake: 1
-      endTime: 0
-    - column: 2
-      type: 0
-      isFake: 1
-      endTime: 0
-    - column: 3
-      type: 0
-      isFake: 1
-      endTime: 0
     - column: 4
       type: 0
-      isFake: 1
+      isFake: 0
       endTime: 0
-    - column: 5
-      type: 0
-      isFake: 1
-      endTime: 0
-  - time: 2
+  - time: 1.44
     notes:
-    - column: 0
-      type: 0
-      isFake: 0
-      endTime: 3
-    - column: 1
-      type: 0
-      isFake: 0
-      endTime: 0
-    - column: 2
-      type: 0
-      isFake: 0
-      endTime: 0
-    - column: 3
-      type: 0
-      isFake: 0
-      endTime: 0
-    - column: 4
-      type: 0
-      isFake: 0
-      endTime: 0
     - column: 5
       type: 0
       isFake: 0
       endTime: 0
-  - time: 3
+  - time: 1.90
     notes:
-    - column: 0
-      type: 0
-      isFake: 0
-      endTime: 3
-    - column: 1
-      type: 0
-      isFake: 0
-      endTime: 0
-    - column: 2
-      type: 0
-      isFake: 0
-      endTime: 0
     - column: 3
       type: 0
       isFake: 0
       endTime: 0
-    - column: 4
-      type: 0
-      isFake: 0
-      endTime: 0
-    - column: 5
-      type: 0
-      isFake: 0
-      endTime: 0
-  - time: 4
+  - time: 2.30
     notes:
-    - column: 0
-      type: 0
-      isFake: 0
-      endTime: 3
-    - column: 1
-      type: 0
-      isFake: 0
-      endTime: 0
-    - column: 2
-      type: 0
-      isFake: 0
-      endTime: 0
-    - column: 3
-      type: 0
-      isFake: 0
-      endTime: 0
     - column: 4
       type: 0
       isFake: 0
       endTime: 0
+  - time: 2.7
+    notes:
     - column: 5
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 3.1
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 3.5
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 3.9
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+    - column: 5
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 4.3
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 4.85
+    notes:
+    - column: 4
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 5.29
+    notes:
+    - column: 5
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 5.8
+    notes:
+    - column: 3
       type: 0
       isFake: 0
       endTime: 0

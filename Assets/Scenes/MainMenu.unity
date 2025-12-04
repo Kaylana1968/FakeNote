@@ -201,8 +201,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 661741815}
   m_HandleRect: {fileID: 661741814}
   m_Direction: 0
-  m_Value: 0
-  m_Size: 0.9994507
+  m_Value: -0.00006104261
+  m_Size: 0.99945074
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -772,6 +772,10 @@ MonoBehaviour:
     levelDescription: BREZIL ou quoi ? feur
     levelDificulty: 4
     level: {fileID: 11400000, guid: 8dc0a280f0f03754aad270bd90bb5ce8, type: 2}
+  - levelName: The Other Promise
+    levelDescription: Roxas's Theme From Kingdom Hearts
+    levelDificulty: 4
+    level: {fileID: 11400000, guid: beed44a495ce7684fa9d1fb347ef3c66, type: 2}
   container: {fileID: 75907635}
   blockPrefab: {fileID: 173960967127053068, guid: 3e0a1685bba9a7643a8c0b9b1ccb99d1, type: 3}
 --- !u!1 &1290055445
