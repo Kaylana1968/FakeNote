@@ -6,13 +6,13 @@ public class LevelLauncher : MonoBehaviour
 {
 	[SerializeField] GameObject tapNote;
 	[SerializeField] GameObject noteTrail;
+	[SerializeField] float musicStartAt = 0f;
 
 	AudioSource audioSource;
 	public Level level;
 	public List<Transform> columns = new();
 	public List<Transform> notes = new();
 
-	readonly float musicStartAt = 0f;
 	readonly float startPauseTime = 2f;
 	readonly float speed = 5f;
 	readonly List<Color> colors = new()
@@ -78,8 +78,8 @@ public class LevelLauncher : MonoBehaviour
 					trail.transform.position = new Vector3(trail.transform.position.x, -0.001f, trail.transform.position.z);
 					trail.transform.localScale = new Vector3(0.75f, Mathf.Abs(newNote.transform.position.z - endNote.transform.position.z) - 0.5f, 1f);
 
-					endNote.GetComponent<SpriteRenderer>().color = color;
-					trail.GetComponent<SpriteRenderer>().color = new Color(color.r, color.g, color.b, 0.5f);
+					endNote.GetComponent<SpriteRenderer>().color = data.isFake ? Color.red : color;
+					trail.GetComponent<SpriteRenderer>().color = data.isFake ? new Color(1f, 0f, 0f, 0.5f) : new Color(color.r, color.g, color.b, 0.5f);
 				}
 			}
 		}
