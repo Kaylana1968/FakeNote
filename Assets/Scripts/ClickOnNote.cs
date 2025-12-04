@@ -52,7 +52,6 @@ public class ClickOnNote : MonoBehaviour
 
 	int CheckDistance(Transform note)
 	{
-       
 		float distance = Mathf.Abs(note.position.z - transform.position.z);
 
         if (distance >= 0.75)
@@ -179,6 +178,8 @@ public class ClickOnNote : MonoBehaviour
         {
             score -= 500;
             if (score < 0) score = 0;
+			if (combo > bestCombo) bestCombo = combo;
+			combo = 0;
         }else
         {
             score += rank;
@@ -189,35 +190,39 @@ public class ClickOnNote : MonoBehaviour
     {
         foreach (Transform note in levelLauncher.columns[columnIndex])
         {
+			NoteData noteData = note.GetComponent<NoteData>();
             if (note.childCount > 0)
             {
                 Transform endNote = note.GetChild(0);
                 float dotEnd = Vector3.Dot((endNote.position - validationBar.position).normalized, validationBar.forward);
                 if (dotEnd < 0)
                 {
-					miss +=1;
-					if (combo > bestCombo)
-					{
-						bestCombo = combo;
+					if(!noteData.isFake){
+						miss +=1;
+						if (combo > bestCombo)
+						{
+							bestCombo = combo;
+						}
+						combo = 0;
 					}
-					combo = 0;
-                    levelLauncher.notes.Remove(note);
-                    Destroy(note.gameObject);
-                    inputActions[columnIndex].canceled -= canceledCallbacks[columnIndex];
-					particleSystems[columnIndex].Stop();
+						levelLauncher.notes.Remove(note);
+						Destroy(note.gameObject);
+						inputActions[columnIndex].canceled -= canceledCallbacks[columnIndex];
+						particleSystems[columnIndex].Stop();
                 }
             }else
             {
                 float dot = Vector3.Dot((note.position - validationBar.position).normalized, validationBar.forward);
                 if (dot < 0){
-
-					miss +=1;
-					if (combo > bestCombo)
-					{
-						bestCombo = combo;
+					if(!noteData.isFake){
+						miss +=1;
+						if (combo > bestCombo)
+						{
+							bestCombo = combo;
+						}
+						combo = 0;
 					}
-					combo = 0;
-                    levelLauncher.notes.Remove(note);
+					levelLauncher.notes.Remove(note);
                     Destroy(note.gameObject);
                 }
             }
