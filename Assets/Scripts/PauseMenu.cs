@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,6 +8,9 @@ public class PauseMenu : MonoBehaviour
 {
     [SerializeField] GameObject pauseContainer;
     [SerializeField] LevelLauncher levelLauncher;
+    [SerializeField] GameObject number3;
+    [SerializeField] GameObject number2;
+    [SerializeField] GameObject number1;
     public void Update()
     {
         if (Input.GetKeyUp(KeyCode.Space))
@@ -22,7 +26,8 @@ public class PauseMenu : MonoBehaviour
     public void ResumeButton()
     {
         pauseContainer.SetActive(false);
-        StartCoroutine(ResumeAfterDelay());
+        number3.SetActive(true);
+        StartCoroutine(FirstResumeAfterDelay());
         
     }
 
@@ -37,10 +42,31 @@ public class PauseMenu : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
-    private IEnumerator ResumeAfterDelay()
+    private IEnumerator FirstResumeAfterDelay()
     {
-        yield return new WaitForSecondsRealtime(3f);
+        yield return new WaitForSecondsRealtime(1f);
+        number3.SetActive(false);
+        number2.SetActive(true);
+        yield return new WaitForSecondsRealtime(1f);
+        number2.SetActive(false);
+        number1.SetActive(true);
+        yield return new WaitForSecondsRealtime(1f);
         Time.timeScale = 1.0f;
+        number1.SetActive(false);
+        levelLauncher.ResumeMusic();
+
+    }
+    private IEnumerator SecondResumeAfterDelay()
+    {
+        yield return new WaitForSecondsRealtime(1f);
+        number2.SetActive(false);
+        number1.SetActive(true);
+    }
+    private IEnumerator LastResumeAfterDelay()
+    {
+        yield return new WaitForSecondsRealtime(1f);
+        Time.timeScale = 1.0f;
+        number1.SetActive(false);
         levelLauncher.ResumeMusic();
     }
 }
