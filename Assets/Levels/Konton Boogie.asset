@@ -910,14 +910,6 @@ MonoBehaviour:
       type: 0
       isFake: 0
       endTime: 0
-    - column: 2
-      type: 0
-      isFake: 0
-      endTime: 0
-    - column: 3
-      type: 0
-      isFake: 0
-      endTime: 0
     - column: 4
       type: 0
       isFake: 0
