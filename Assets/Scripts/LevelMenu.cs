@@ -6,7 +6,6 @@ using UnityEngine;
 public class LevelParameters
 {
 	public string levelName;
-	public string levelDescription;
 	public string levelDificulty;
 	public Level level;
 }
