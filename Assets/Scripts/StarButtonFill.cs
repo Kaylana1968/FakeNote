@@ -11,12 +11,14 @@ public class StarButtonFill : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     [SerializeField] GameObject BGM;
     [SerializeField] AudioClip newMusic;
     [SerializeField] Button startButton;
+    [SerializeField] Button quitButton;
     [SerializeField] TextMeshProUGUI title;
     [SerializeField] GameObject starsBackground;
     [SerializeField] GameObject secretBackground;
     AudioSource audioSource;
     AudioClip baseMusic;
     Image colorButton;
+    Image quitColorButton;
     ChangeSceneToGame changeSceneToGame;
     Image filmImage;
     SpriteRenderer backgroundSpriteRenderer;
@@ -44,6 +46,7 @@ public class StarButtonFill : MonoBehaviour, IPointerDownHandler, IPointerUpHand
         baseMusic = audioSource.clip;
 
         colorButton = startButton.GetComponent<Image>();
+        quitColorButton = quitButton.GetComponent<Image>();
     }
 
     void Start()
@@ -175,6 +178,7 @@ public class StarButtonFill : MonoBehaviour, IPointerDownHandler, IPointerUpHand
         starsBackground.SetActive(false);
         secretBackground.SetActive(true);
         colorButton.color = new Color(0.5f, 0f, 0f);
+        quitColorButton.color = new Color(0.5f, 0f, 0f);
         startButton.onClick.RemoveAllListeners();
         startButton.onClick.AddListener(() => changeSceneToGame.MoveToGameScene("MainMenu"));
         title.color = new Color(0.5f, 0f, 0f);
