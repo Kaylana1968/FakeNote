@@ -142,13 +142,13 @@ MonoBehaviour:
       endTime: 0
     - column: 5
       type: 0
-      isFake: 0
+      isFake: 1
       endTime: 0
   - time: 8
     notes:
     - column: 1
       type: 0
-      isFake: 0
+      isFake: 1
       endTime: 0
     - column: 4
       type: 0
@@ -162,13 +162,13 @@ MonoBehaviour:
       endTime: 0
     - column: 3
       type: 0
-      isFake: 0
+      isFake: 1
       endTime: 0
   - time: 8.4
     notes:
     - column: 0
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 8.8
     - column: 5
       type: 1
@@ -182,7 +182,7 @@ MonoBehaviour:
       endTime: 9.3
     - column: 4
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 9.3
   - time: 9.4
     notes:
@@ -192,13 +192,13 @@ MonoBehaviour:
       endTime: 9.8
     - column: 5
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 9.8
   - time: 9.9
     notes:
     - column: 1
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 10.3
     - column: 4
       type: 1
@@ -212,13 +212,13 @@ MonoBehaviour:
       endTime: 10.7
     - column: 3
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 10.7
   - time: 10.7 # ee
     notes:
     - column: 2
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 11
     - column: 5
       type: 1
@@ -232,7 +232,7 @@ MonoBehaviour:
       endTime: 11.3
     - column: 4
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 11.3
   - time: 11.5
     notes:
@@ -272,13 +272,13 @@ MonoBehaviour:
       endTime: 12.5
     - column: 3
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 12.5
   - time: 12.6
     notes:
     - column: 1
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 13
     - column: 4
       type: 1
@@ -288,7 +288,7 @@ MonoBehaviour:
     notes:
     - column: 2
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 13.5
     - column: 3
       type: 1
@@ -302,7 +302,7 @@ MonoBehaviour:
       endTime: 14
     - column: 4
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 14
   - time: 14.1 # oo
     notes:
@@ -312,13 +312,13 @@ MonoBehaviour:
       endTime: 14.40
     - column: 5
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 14.40
   - time: 14.40 # ee
     notes:
     - column: 0
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 14.70
     - column: 3
       type: 1
@@ -332,7 +332,7 @@ MonoBehaviour:
       endTime: 15
     - column: 4
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 15
   - time: 16 # mi
     notes:
@@ -692,8 +692,8 @@ MonoBehaviour:
     notes:
     - column: 0
       type: 0
-      isFake: 0
-      endTime: 0
+      isFake: 1
+      endTime: 1
     - column: 5
       type: 0
       isFake: 0
@@ -702,8 +702,8 @@ MonoBehaviour:
     notes:
     - column: 1
       type: 0
-      isFake: 0
-      endTime: 0
+      isFake: 1
+      endTime: 1
     - column: 4
       type: 0
       isFake: 0
@@ -712,8 +712,8 @@ MonoBehaviour:
     notes:
     - column: 2
       type: 0
-      isFake: 0
-      endTime: 0
+      isFake: 1
+      endTime: 1
     - column: 3
       type: 0
       isFake: 0
@@ -722,7 +722,7 @@ MonoBehaviour:
     notes:
     - column: 0
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 38.8
     - column: 5
       type: 1
@@ -732,7 +732,7 @@ MonoBehaviour:
     notes:
     - column: 1
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 39.3
     - column: 4
       type: 1
@@ -742,7 +742,7 @@ MonoBehaviour:
     notes:
     - column: 0
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 39.8
     - column: 5
       type: 1
@@ -752,7 +752,7 @@ MonoBehaviour:
     notes:
     - column: 1
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 40.3
     - column: 4
       type: 1
@@ -762,7 +762,7 @@ MonoBehaviour:
     notes:
     - column: 0
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 40.7
     - column: 3
       type: 1
@@ -772,7 +772,7 @@ MonoBehaviour:
     notes:
     - column: 2
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 41
     - column: 5
       type: 1
@@ -782,7 +782,7 @@ MonoBehaviour:
     notes:
     - column: 1
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 41.3
     - column: 4
       type: 1
@@ -796,7 +796,7 @@ MonoBehaviour:
       endTime: 0
     - column: 3
       type: 0
-      isFake: 0
+      isFake: 1
       endTime: 0
   - time: 41.7 # thin
     notes:
@@ -806,7 +806,7 @@ MonoBehaviour:
       endTime: 0
     - column: 4
       type: 0
-      isFake: 0
+      isFake: 1
       endTime: 0
   - time: 41.9 # king
     notes:
@@ -816,17 +816,17 @@ MonoBehaviour:
       endTime: 0
     - column: 5
       type: 0
-      isFake: 0
+      isFake: 1
       endTime: 0
   - time: 42.1 # mi
     notes:
     - column: 2
       type: 1
-      isFake: 0
+      isFake: 0 
       endTime: 42.5
     - column: 3
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 42.5
   - time: 42.6 # ku
     notes:
@@ -836,7 +836,7 @@ MonoBehaviour:
       endTime: 43
     - column: 4
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 43
   - time: 43.1 # mi
     notes:
@@ -846,7 +846,7 @@ MonoBehaviour:
       endTime: 43.5
     - column: 3
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 43.5
   - time: 43.6 # ku
     notes:
@@ -856,7 +856,7 @@ MonoBehaviour:
       endTime: 44
     - column: 4
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 44
   - time: 44.1 # oo
     notes:
@@ -866,7 +866,7 @@ MonoBehaviour:
       endTime: 44.4
     - column: 5
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 44.4
   - time: 44.4 # ee
     notes:
@@ -876,7 +876,7 @@ MonoBehaviour:
       endTime: 44.7
     - column: 3
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 44.7
   - time: 44.7 # oo
     notes:
@@ -886,7 +886,7 @@ MonoBehaviour:
       endTime: 45
     - column: 4
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 45
   - time: 46 # I'm
     notes:
@@ -914,19 +914,19 @@ MonoBehaviour:
     notes:
     - column: 0
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 47.6
     - column: 1
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 47.75
     - column: 4
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 47.75
     - column: 5
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 47.6
   - time: 48.5 # be
     notes:
@@ -1236,13 +1236,13 @@ MonoBehaviour:
       endTime: 0
     - column: 5
       type: 0
-      isFake: 0
+      isFake: 1
       endTime: 0
   - time: 67.9
     notes:
     - column: 1
       type: 0
-      isFake: 0
+      isFake: 1
       endTime: 0
     - column: 4
       type: 0
@@ -1252,7 +1252,7 @@ MonoBehaviour:
     notes:
     - column: 2
       type: 0
-      isFake: 0
+      isFake: 1
       endTime: 0
     - column: 3
       type: 0
@@ -1266,7 +1266,7 @@ MonoBehaviour:
       endTime: 68.7
     - column: 5
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 68.7
   - time: 68.8
     notes:
@@ -1276,13 +1276,13 @@ MonoBehaviour:
       endTime: 69.2
     - column: 4
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 69.2
   - time: 69.3
     notes:
     - column: 0
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 69.7
     - column: 5
       type: 1
@@ -1292,7 +1292,7 @@ MonoBehaviour:
     notes:
     - column: 1
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 70.2
     - column: 4
       type: 1
@@ -1306,7 +1306,7 @@ MonoBehaviour:
       endTime: 70.6
     - column: 3
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 70.6
   - time: 70.6
     notes:
@@ -1316,13 +1316,13 @@ MonoBehaviour:
       endTime: 70.9
     - column: 5
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 70.9
   - time: 70.9
     notes:
     - column: 1
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 71.2
     - column: 4
       type: 1
@@ -1332,7 +1332,7 @@ MonoBehaviour:
     notes:
     - column: 2
       type: 0
-      isFake: 0
+      isFake: 1
       endTime: 0
     - column: 3
       type: 0
@@ -1346,7 +1346,7 @@ MonoBehaviour:
       endTime: 0
     - column: 4
       type: 0
-      isFake: 0
+      isFake: 1
       endTime: 0
   - time: 71.8
     notes:
@@ -1356,13 +1356,13 @@ MonoBehaviour:
       endTime: 0
     - column: 5
       type: 0
-      isFake: 0
+      isFake: 1
       endTime: 0
   - time: 72
     notes:
     - column: 2
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 72.4
     - column: 3
       type: 1
@@ -1372,7 +1372,7 @@ MonoBehaviour:
     notes:
     - column: 1
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 72.9
     - column: 4
       type: 1
@@ -1386,7 +1386,7 @@ MonoBehaviour:
       endTime: 73.4
     - column: 3
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 73.4
   - time: 73.5
     notes:
@@ -1396,13 +1396,13 @@ MonoBehaviour:
       endTime: 73.9
     - column: 4
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 73.9
   - time: 74
     notes:
     - column: 2
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 74.3
     - column: 5
       type: 1
@@ -1412,7 +1412,7 @@ MonoBehaviour:
     notes:
     - column: 0
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 74.6
     - column: 3
       type: 1
@@ -1426,7 +1426,7 @@ MonoBehaviour:
       endTime: 74.9
     - column: 4
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 74.9
   - time: 76
     notes:
@@ -1454,7 +1454,7 @@ MonoBehaviour:
     notes:
     - column: 0
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 77.6
     - column: 1
       type: 1
@@ -1466,7 +1466,7 @@ MonoBehaviour:
       endTime: 77.75
     - column: 5
       type: 1
-      isFake: 0
+      isFake: 1
       endTime: 77.6
   - time: 78.5
     notes:
@@ -1997,6 +1997,122 @@ MonoBehaviour:
     - column: 5
       type: 0
       isFake: 0
+      endTime: 0
+  - time: 110
+    notes:
+    - column: 0
+      type: 1
+      isFake: 1
+      endTime: 110.3
+    - column: 1
+      type: 0
+      isFake: 1
+      endTime: 0
+    - column: 2
+      type: 1
+      isFake: 1
+      endTime: 110.3
+  - time: 110.3
+    notes:
+    - column: 1
+      type: 0
+      isFake: 1
+      endTime: 0
+    - column: 3
+      type: 1
+      isFake: 1
+      endTime: 110.6
+    - column: 4
+      type: 0
+      isFake: 1
+      endTime: 0
+    - column: 5
+      type: 1
+      isFake: 1
+      endTime: 110.6
+  - time: 110.6
+    notes:
+    - column: 4
+      type: 0
+      isFake: 1
+      endTime: 0
+  - time: 111
+    notes:
+    - column: 0
+      type: 1
+      isFake: 1
+      endTime: 111.6
+    - column: 1
+      type: 0
+      isFake: 1
+      endTime: 0
+  - time: 111.3
+    notes:
+    - column: 1
+      type: 0
+      isFake: 1
+      endTime: 0
+    - column: 3
+      type: 1
+      isFake: 1
+      endTime: 111.9
+    - column: 4
+      type: 0
+      isFake: 1
+      endTime: 0
+  - time: 111.6
+    notes:
+    - column: 1
+      type: 0
+      isFake: 1
+      endTime: 0
+    - column: 4
+      type: 0
+      isFake: 1
+      endTime: 0
+  - time: 111.9
+    notes:
+    - column: 4
+      type: 0
+      isFake: 1
+      endTime: 0
+  - time: 112.3
+    notes:
+    - column: 0
+      type: 1
+      isFake: 1
+      endTime: 112.6
+    - column: 1
+      type: 0
+      isFake: 1
+      endTime: 0
+    - column: 2
+      type: 1
+      isFake: 1
+      endTime: 112.6
+  - time: 112.6
+    notes:
+    - column: 1
+      type: 0
+      isFake: 1
+      endTime: 0
+    - column: 3
+      type: 1
+      isFake: 1
+      endTime: 112.9
+    - column: 4
+      type: 0
+      isFake: 1
+      endTime: 0
+    - column: 5
+      type: 1
+      isFake: 1
+      endTime: 112.9
+  - time: 112.9
+    notes:
+    - column: 4
+      type: 0
+      isFake: 1
       endTime: 0
   - time: 113.5 # where
     notes:

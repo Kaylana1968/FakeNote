@@ -3,8 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class ChangeSceneToGame : MonoBehaviour
 {
-	public void MoveToGameScene()
+	public void MoveToGameScene(string scene)
 	{
-		SceneManager.LoadScene("MainMenu");
+		SceneManager.LoadScene(scene);
 	}
 }

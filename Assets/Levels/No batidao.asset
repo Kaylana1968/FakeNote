@@ -1,0 +1,1492 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0830c87f3e695b2458ad0419b27839fe, type: 3}
+  m_Name: No batidao
+  m_EditorClassIdentifier: Assembly-CSharp::Level
+  audio: {fileID: 8300000, guid: 142df7d5e35e9744b86969c1fddf88f4, type: 3}
+  noteRows:
+  - time: 2.416
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 2.78
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 3.232
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 3.68
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 4.128
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 4.576
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 5.024
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 5.472
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 5.92
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 6.368
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 6.816
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 7.264
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 7.712
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 8.16
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 8.608
+    notes:
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 9.056
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 9.312
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 9.656
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 10.136
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 10.584
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 11.032
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 11.512
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 11.960
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 12.440
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 12.888
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 13.368
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 13.816
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 14.296
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 14.744
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 15.292
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 15.672
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 16.024
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 16.544
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 17.528
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 17.976
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 18.200
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 18.424
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 18.648
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 18.904
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 19.352
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 19.832
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 20.024
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 20.280
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 20.504
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 20.728
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 20.920
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 21.208
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 21.368
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 21.656
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 21.880
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 22.136
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 22.360
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 22.584
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 22.776
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 23.064
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 23.512
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 23.736
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 23.960
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 24.184
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 24.440
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 24.888
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 25.368
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 25.560
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 25.816
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 26.040
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 26.296
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 26.744
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 27.192
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 27.416
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 27.672
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 27.864
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 28.152
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 28.312
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 28.600
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 29.048
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 29.272
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 29.528
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 29.720
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 29.976
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 30.168
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 30.424
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 30.904
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 31.096
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 31.352
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 39.416
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 39.672
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 40.120
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 40.600
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 41.048
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 41.496
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 41.976
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 42.424
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 42.904
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 43.352
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 43.832
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 44.280
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 44.728
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 45.208
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 45.560
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 45.912
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 47.064
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 47.512
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 47.736
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 47.960
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 48.184
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 48.440
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 48.888
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 49.368
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 49.560
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 49.816
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 50.040
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 50.264
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 50.456
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 50.744
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 50.904
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 51.192
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 51.416
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 51.672
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 51.896
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 52.120
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 52.312
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 52.600
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 53.048
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 53.272
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 53.496
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 53.720
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 53.976
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 54.424
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 54.904
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 55.096
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 55.352
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 55.576
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 55.832
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 56.280
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 56.600
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 56.760
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 56.952
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 57.208
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 57.432
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 57.656
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 57.848
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 58.136
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 58.584
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 58.808
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 59.064
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 59.288
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 59.512
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 59.704
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 59.960
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 60.440
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 60.632
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 60.888
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 61.336
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 61.816
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 62.136
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 62.488
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 62.968
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 63.672
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 63.992
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 64.344
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 65.048
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 65.240
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 65.496
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 65.816
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 66.200
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 66.648
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 66.968
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 67.352
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 67.672
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 68.024
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 68.728
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 69.208
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 69.656
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 69.880
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 70.136
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 70.328
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 70.584
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 71.064
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 71.256
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 71.512
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 71.736
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 71.960
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 72.184
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 72.440
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 72.600
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 72.888
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 73.368
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 73.560
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 73.816
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 74.040
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 74.264
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 74.744
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 74.904
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 75.192
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 75.416
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 75.672
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 76.600
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 77.048
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 77.272
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 77.528
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 77.720
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 77.976
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 78.424
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 78.904
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 79.128
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 79.384
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 79.576
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 79.832
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 79.992
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 80.280
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 80.440
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 80.728
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 80.952
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 81.208
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 81.432
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 81.656
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 82.136
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 82.584
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 82.808
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 83.064
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 83.256
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 83.480
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 83.960
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 84.440
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 84.664
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 84.888
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 85.112
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 85.368
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 85.816
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 86.136
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 86.296
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 86.488
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 86.744
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 86.968
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 87.192
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 87.384
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 87.672
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 88.120
+    notes: 
+    - column: 1
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 88.344
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 88.600
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 88.792
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 89.048
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 89.528
+    notes: 
+    - column: 0
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 89.976
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 90.200
+    notes: 
+    - column: 2
+      type: 0
+      isFake: 0
+      endTime: 0
+  - time: 90.424
+    notes: 
+    - column: 3
+      type: 0
+      isFake: 0
+      endTime: 0
