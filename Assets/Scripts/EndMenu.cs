@@ -38,6 +38,7 @@ public class EndMenu: MonoBehaviour
 
 	public void MainMenuButton()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
     }
 }

@@ -15,7 +15,7 @@ public class LevelLauncher : MonoBehaviour
 	public bool isPaused = false;
 	double pauseStartDSP;
 	double pauseTime = 0;
-	readonly float musicStartAt = 0f;
+	readonly float musicStartAt = 20f;
 	readonly float startPauseTime = 2f;
 	readonly float speed = 5f;
 	readonly List<Color> colors = new()
