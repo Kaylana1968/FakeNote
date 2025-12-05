@@ -1,11 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class LevelBlock : MonoBehaviour
 {
-	public Text titleText;
-	public Text difficultyText;
+	public TextMeshProUGUI titleText;
+	public TextMeshProUGUI difficultyText;
 	private Level level;
 	public void Setup(LevelParameters levelBlock)
 	{
