@@ -36,6 +36,8 @@ public class LevelLauncher : MonoBehaviour
 		audioSource = GetComponent<AudioSource>();
 
 		level = LevelSelection.SelectedLevel;
+
+		print(level);
 		
 		if (level != null && level.audio != null)
 		{

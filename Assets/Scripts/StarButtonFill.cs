@@ -3,6 +3,8 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Collections;
 using TMPro;
+using UnityEngine.SceneManagement;
+
 
 public class StarButtonFill : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
@@ -12,6 +14,7 @@ public class StarButtonFill : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     [SerializeField] AudioClip newMusic;
     [SerializeField] Button startButton;
     [SerializeField] Button quitButton;
+    [SerializeField] Button settingsButton;
     [SerializeField] TextMeshProUGUI title;
     [SerializeField] GameObject starsBackground;
     [SerializeField] GameObject secretBackground;
@@ -19,7 +22,8 @@ public class StarButtonFill : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     AudioClip baseMusic;
     Image colorButton;
     Image quitColorButton;
-    ChangeSceneToGame changeSceneToGame;
+    Image settingsColorButton;
+    [SerializeField] ChangeSceneToGame changeSceneToGame;
     Image filmImage;
     SpriteRenderer backgroundSpriteRenderer;
     Image targetImage;
@@ -47,6 +51,7 @@ public class StarButtonFill : MonoBehaviour, IPointerDownHandler, IPointerUpHand
 
         colorButton = startButton.GetComponent<Image>();
         quitColorButton = quitButton.GetComponent<Image>();
+        settingsColorButton = settingsButton.GetComponent<Image>();
     }
 
     void Start()
@@ -174,14 +179,23 @@ public class StarButtonFill : MonoBehaviour, IPointerDownHandler, IPointerUpHand
 
     void ExecuteAction()
     {
-        backgroundSpriteRenderer.color = new Color(1f, 0f, 0f);
-        starsBackground.SetActive(false);
-        secretBackground.SetActive(true);
-        colorButton.color = new Color(0.5f, 0f, 0f);
-        quitColorButton.color = new Color(0.5f, 0f, 0f);
-        startButton.onClick.RemoveAllListeners();
-        startButton.onClick.AddListener(() => changeSceneToGame.MoveToGameScene("MainMenu"));
-        title.color = new Color(0.5f, 0f, 0f);
+        // backgroundSpriteRenderer.color = new Color(1f, 0f, 0f);
+        // starsBackground.SetActive(false);
+        // secretBackground.SetActive(true);
+        // colorButton.color = new Color(0.5f, 0f, 0f);
+        // quitColorButton.color = new Color(0.5f, 0f, 0f);
+        // settingsColorButton.color = new Color(0.5f, 0f, 0f);
+
+
+        // startButton.onClick.RemoveAllListeners();
+        // startButton.onClick.AddListener(() => changeSceneToGame.MoveToGameScene("SecretMainMenu"));
+
+        // settingsButton.onClick.RemoveAllListeners();
+        // settingsButton.onClick.AddListener(() => changeSceneToGame.MoveToGameScene("SecretSettings"));
+
+        // title.color = new Color(0.5f, 0f, 0f);
+
+        SceneManager.LoadScene("SecretHome");
     }
 
     void ResetCameraPosition()

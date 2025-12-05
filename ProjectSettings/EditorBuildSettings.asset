@@ -14,6 +14,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: f83e830c6eb8ded439586e3b6f0ffc5a
+  - enabled: 1
+    path: Assets/Scenes/SecretMainMenu.unity
+    guid: 247a7d1848a7f1b4c9719f53be31dadd
+  - enabled: 1
+    path: Assets/Scenes/SecretGameScene.unity
+    guid: 1e4b27aa974119c4785d0317beb47861
+  - enabled: 1
+    path: Assets/Scenes/SecretSettings.unity
+    guid: ab795fafb90f03c49af0ac065c2ba9fb
+  - enabled: 1
+    path: Assets/Scenes/Settings.unity
+    guid: 059d953085f2e274989fe4f113ea7176
+  - enabled: 1
+    path: Assets/Scenes/SecretHome.unity
+    guid: c7cbf8a7c3c8ce3448cf4b89b98f0239
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
